@@ -23,6 +23,7 @@ namespace Memory
         public FrmMemory()
         {
             InitializeComponent();
+            megjelenites();
         }
 
         private void sorszamSorsol()
@@ -59,14 +60,12 @@ namespace Memory
             }                  
         }
 
-        private void bttn_UjJatek_Click(object sender, EventArgs e)
+        private void megjelenites()
         {
             sorokSzama = (int)nmrcUpDown_SorDb.Value;
             lapokSzama = (int)Math.Pow(sorokSzama, 2);
-
             sorszamSorsol();
             kever();
-
             fp_Panel.Controls.Clear();
             foreach (var item in sorSzamok)
             {
@@ -74,8 +73,13 @@ namespace Memory
             }
         }
 
-        private void tmr_Timer_Tick(object sender, EventArgs e)
+        private void bttn_UjJatek_Click(object sender, EventArgs e)
         {
+            megjelenites();
+        }
+
+        private void tmr_Timer_Tick(object sender, EventArgs e)
+        { 
             if (Lap.Levenni && Lap.ElozoLap!=Lap.AktualisLap)
             {
                 Lap.ElozoLap.levesz();
