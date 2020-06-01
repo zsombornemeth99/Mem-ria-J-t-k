@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.fp_Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_SorOszlop = new System.Windows.Forms.Panel();
-            this.lbl_SorOszlop = new System.Windows.Forms.Label();
-            this.nmrcUpDown_SorDb = new System.Windows.Forms.NumericUpDown();
             this.bttn_UjJatek = new System.Windows.Forms.Button();
+            this.nmrcUpDown_SorDb = new System.Windows.Forms.NumericUpDown();
+            this.lbl_SorOszlop = new System.Windows.Forms.Label();
             this.pnl_Footer = new System.Windows.Forms.Panel();
-            this.tmr_Timer = new System.Windows.Forms.Timer(this.components);
             this.lbl_LevettParok = new System.Windows.Forms.Label();
+            this.tmr_Timer = new System.Windows.Forms.Timer(this.components);
             this.pnl_SorOszlop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDown_SorDb)).BeginInit();
             this.pnl_Footer.SuspendLayout();
@@ -61,14 +61,15 @@
             this.pnl_SorOszlop.Size = new System.Drawing.Size(229, 118);
             this.pnl_SorOszlop.TabIndex = 1;
             // 
-            // lbl_SorOszlop
+            // bttn_UjJatek
             // 
-            this.lbl_SorOszlop.AutoSize = true;
-            this.lbl_SorOszlop.Location = new System.Drawing.Point(17, 28);
-            this.lbl_SorOszlop.Name = "lbl_SorOszlop";
-            this.lbl_SorOszlop.Size = new System.Drawing.Size(78, 17);
-            this.lbl_SorOszlop.TabIndex = 0;
-            this.lbl_SorOszlop.Text = "Sor/Oszlop";
+            this.bttn_UjJatek.Location = new System.Drawing.Point(20, 67);
+            this.bttn_UjJatek.Name = "bttn_UjJatek";
+            this.bttn_UjJatek.Size = new System.Drawing.Size(178, 31);
+            this.bttn_UjJatek.TabIndex = 2;
+            this.bttn_UjJatek.Text = "Új játék";
+            this.bttn_UjJatek.UseVisualStyleBackColor = true;
+            this.bttn_UjJatek.Click += new System.EventHandler(this.bttn_UjJatek_Click);
             // 
             // nmrcUpDown_SorDb
             // 
@@ -84,7 +85,7 @@
             0,
             0});
             this.nmrcUpDown_SorDb.Minimum = new decimal(new int[] {
-            4,
+            2,
             0,
             0,
             0});
@@ -92,20 +93,19 @@
             this.nmrcUpDown_SorDb.Size = new System.Drawing.Size(57, 22);
             this.nmrcUpDown_SorDb.TabIndex = 1;
             this.nmrcUpDown_SorDb.Value = new decimal(new int[] {
-            4,
+            2,
             0,
             0,
             0});
             // 
-            // bttn_UjJatek
+            // lbl_SorOszlop
             // 
-            this.bttn_UjJatek.Location = new System.Drawing.Point(20, 67);
-            this.bttn_UjJatek.Name = "bttn_UjJatek";
-            this.bttn_UjJatek.Size = new System.Drawing.Size(178, 31);
-            this.bttn_UjJatek.TabIndex = 2;
-            this.bttn_UjJatek.Text = "Új játék";
-            this.bttn_UjJatek.UseVisualStyleBackColor = true;
-            this.bttn_UjJatek.Click += new System.EventHandler(this.bttn_UjJatek_Click);
+            this.lbl_SorOszlop.AutoSize = true;
+            this.lbl_SorOszlop.Location = new System.Drawing.Point(17, 28);
+            this.lbl_SorOszlop.Name = "lbl_SorOszlop";
+            this.lbl_SorOszlop.Size = new System.Drawing.Size(78, 17);
+            this.lbl_SorOszlop.TabIndex = 0;
+            this.lbl_SorOszlop.Text = "Sor/Oszlop";
             // 
             // pnl_Footer
             // 
@@ -116,11 +116,6 @@
             this.pnl_Footer.Size = new System.Drawing.Size(833, 37);
             this.pnl_Footer.TabIndex = 2;
             // 
-            // tmr_Timer
-            // 
-            this.tmr_Timer.Interval = 2000;
-            this.tmr_Timer.Tick += new System.EventHandler(this.tmr_Timer_Tick);
-            // 
             // lbl_LevettParok
             // 
             this.lbl_LevettParok.AutoSize = true;
@@ -129,6 +124,11 @@
             this.lbl_LevettParok.Size = new System.Drawing.Size(91, 17);
             this.lbl_LevettParok.TabIndex = 0;
             this.lbl_LevettParok.Text = "Levett párok:";
+            // 
+            // tmr_Timer
+            // 
+            this.tmr_Timer.Interval = 1000;
+            this.tmr_Timer.Tick += new System.EventHandler(this.tmr_Timer_Tick);
             // 
             // FrmMemory
             // 

@@ -62,6 +62,8 @@ namespace Memory
 
         private void megjelenites()
         {
+            Lap.LevettParokSzama = 0;
+            lbl_LevettParok.Text = "Levett párok: " + Lap.LevettParokSzama;
             sorokSzama = (int)nmrcUpDown_SorDb.Value;
             lapokSzama = (int)Math.Pow(sorokSzama, 2);
             sorszamSorsol();
@@ -75,7 +77,23 @@ namespace Memory
 
         private void bttn_UjJatek_Click(object sender, EventArgs e)
         {
-            megjelenites();
+            if (bttn_UjJatek.Text == "Leállít")
+            {
+                foreach (Lap item in fp_Panel.Controls)
+                {
+                    if (!item.Megforditva)
+                        item.fordit();
+                }
+                Lap.LevettParokSzama = 0;
+                nmrcUpDown_SorDb.Enabled = true;
+                bttn_UjJatek.Text = "Új játék";
+            }
+            else
+            {
+                nmrcUpDown_SorDb.Enabled = false;
+                megjelenites();
+                bttn_UjJatek.Text = "Leállít";
+            }
         }
 
         private void tmr_Timer_Tick(object sender, EventArgs e)
@@ -86,12 +104,19 @@ namespace Memory
                 Lap.AktualisLap.levesz();
                 Lap.LevettParokSzama++;
                 lbl_LevettParok.Text ="Levett párok: " + Lap.LevettParokSzama;
+                if (Lap.LevettParokSzama == (lapokSzama / 2))
+                {
+                    tmr_Timer.Enabled = false;
+                    MessageBox.Show("Gratulálok, minden lapot levett!!", "Gratulálok!");
+                    nmrcUpDown_SorDb.Enabled = true;
+                    megjelenites();
+                }
             }
             else
             {
                 Lap.ElozoLap.fordit();
                 Lap.AktualisLap.fordit();
-            }
+            }            
             tmr_Timer.Enabled = false;
             Lap.MegforditottLapokSzama = 0;
         }
