@@ -16,6 +16,7 @@ namespace Memory
         private int maxKep = 99;
         private int sorokSzama;
         private int lapokSzama;
+        private int idomeres;
 
         private Random r = new Random();
         private List<int> sorSzamok;
@@ -23,7 +24,7 @@ namespace Memory
         public FrmMemory()
         {
             InitializeComponent();
-            megjelenites();
+            //megjelenites();
         }
 
         private void sorszamSorsol()
@@ -48,8 +49,8 @@ namespace Memory
             {
                 do
                 {
-                    lap1 = r.Next(1,sorSzamok.Count);
-                    lap2 = r.Next(1,sorSzamok.Count);
+                    lap1 = r.Next(1, sorSzamok.Count);
+                    lap2 = r.Next(1, sorSzamok.Count);
                     if (lap1 != lap2)
                     {
                         void csere() => (sorSzamok[lap1], sorSzamok[lap2]) = (sorSzamok[lap2], sorSzamok[lap1]);
@@ -57,7 +58,7 @@ namespace Memory
                     }
                 }
                 while (lap1 == lap2);
-            }                  
+            }
         }
 
         private void megjelenites()
@@ -85,6 +86,7 @@ namespace Memory
                         item.fordit();
                 }
                 Lap.LevettParokSzama = 0;
+                idomeres = 0;
                 nmrcUpDown_SorDb.Enabled = true;
                 bttn_UjJatek.Text = "Új játék";
             }
@@ -93,32 +95,48 @@ namespace Memory
                 nmrcUpDown_SorDb.Enabled = false;
                 megjelenites();
                 bttn_UjJatek.Text = "Leállít";
+                tmr_idomeres.Enabled = true;
             }
         }
 
         private void tmr_Timer_Tick(object sender, EventArgs e)
-        { 
-            if (Lap.Levenni && Lap.ElozoLap!=Lap.AktualisLap)
+        {
+            if (Lap.Levenni && Lap.ElozoLap != Lap.AktualisLap)
             {
                 Lap.ElozoLap.levesz();
                 Lap.AktualisLap.levesz();
                 Lap.LevettParokSzama++;
-                lbl_LevettParok.Text ="Levett párok: " + Lap.LevettParokSzama;
+                lbl_LevettParok.Text = "Levett párok: " + Lap.LevettParokSzama;
                 if (Lap.LevettParokSzama == (lapokSzama / 2))
                 {
                     tmr_Timer.Enabled = false;
+                    tmr_idomeres.Enabled = false;
                     MessageBox.Show("Gratulálok, minden lapot levett!!", "Gratulálok!");
+                    bttn_UjJatek.Text = "Új játék";
                     nmrcUpDown_SorDb.Enabled = true;
-                    megjelenites();
+                    idomeres = 0;
+                    tmr_idomeres.Enabled = true;
+                    fp_Panel.Controls.Clear();
+                    //megjelenites();
                 }
             }
             else
             {
                 Lap.ElozoLap.fordit();
                 Lap.AktualisLap.fordit();
-            }            
+            }
+
             tmr_Timer.Enabled = false;
             Lap.MegforditottLapokSzama = 0;
+        }
+
+        private void tmr_idomeres_Tick(object sender, EventArgs e)
+        {
+            if (bttn_UjJatek.Text=="Leállít")
+            {
+                lbl_ido.Text = "Játékidő: " + idomeres;
+                idomeres++;
+            }            
         }
     }
 }

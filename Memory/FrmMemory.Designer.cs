@@ -37,6 +37,8 @@
             this.pnl_Footer = new System.Windows.Forms.Panel();
             this.lbl_LevettParok = new System.Windows.Forms.Label();
             this.tmr_Timer = new System.Windows.Forms.Timer(this.components);
+            this.lbl_ido = new System.Windows.Forms.Label();
+            this.tmr_idomeres = new System.Windows.Forms.Timer(this.components);
             this.pnl_SorOszlop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDown_SorDb)).BeginInit();
             this.pnl_Footer.SuspendLayout();
@@ -110,6 +112,7 @@
             // pnl_Footer
             // 
             this.pnl_Footer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Footer.Controls.Add(this.lbl_ido);
             this.pnl_Footer.Controls.Add(this.lbl_LevettParok);
             this.pnl_Footer.Location = new System.Drawing.Point(0, 532);
             this.pnl_Footer.Name = "pnl_Footer";
@@ -119,7 +122,7 @@
             // lbl_LevettParok
             // 
             this.lbl_LevettParok.AutoSize = true;
-            this.lbl_LevettParok.Location = new System.Drawing.Point(113, 11);
+            this.lbl_LevettParok.Location = new System.Drawing.Point(686, 10);
             this.lbl_LevettParok.Name = "lbl_LevettParok";
             this.lbl_LevettParok.Size = new System.Drawing.Size(91, 17);
             this.lbl_LevettParok.TabIndex = 0;
@@ -129,6 +132,21 @@
             // 
             this.tmr_Timer.Interval = 1000;
             this.tmr_Timer.Tick += new System.EventHandler(this.tmr_Timer_Tick);
+            // 
+            // lbl_ido
+            // 
+            this.lbl_ido.AutoSize = true;
+            this.lbl_ido.Location = new System.Drawing.Point(11, 10);
+            this.lbl_ido.Name = "lbl_ido";
+            this.lbl_ido.Size = new System.Drawing.Size(65, 17);
+            this.lbl_ido.TabIndex = 1;
+            this.lbl_ido.Text = "Játékidő:";
+            // 
+            // tmr_idomeres
+            // 
+            this.tmr_idomeres.Enabled = true;
+            this.tmr_idomeres.Interval = 1000;
+            this.tmr_idomeres.Tick += new System.EventHandler(this.tmr_idomeres_Tick);
             // 
             // FrmMemory
             // 
@@ -162,6 +180,8 @@
         private System.Windows.Forms.Panel pnl_Footer;
         private System.Windows.Forms.Label lbl_LevettParok;
         public System.Windows.Forms.Timer tmr_Timer;
+        private System.Windows.Forms.Label lbl_ido;
+        private System.Windows.Forms.Timer tmr_idomeres;
     }
 }
 
