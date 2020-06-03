@@ -38,7 +38,12 @@ namespace Memory
                 bttn_UjJatek.Text = "Új játék";
                 nmrcUpDown_SorDb.Enabled = true;
                 cmbBx_nehezseg.Enabled = true;
-                idomeres = 0;
+                if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
+                    idomeres = lapokSzama*10;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                    idomeres = lapokSzama * 5;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
+                    idomeres = lapokSzama * 2;
                 tmr_idomeres.Enabled = true;
                 fp_Panel.Controls.Clear();
                 //megjelenites();
@@ -51,7 +56,12 @@ namespace Memory
                 bttn_UjJatek.Text = "Új játék";
                 nmrcUpDown_SorDb.Enabled = true;
                 cmbBx_nehezseg.Enabled = true;
-                idomeres = 0;
+                if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
+                    idomeres = lapokSzama * 10;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                    idomeres = lapokSzama * 5;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
+                    idomeres = lapokSzama * 2;
                 tmr_idomeres.Enabled = true;
                 fp_Panel.Controls.Clear();
             }
@@ -124,7 +134,12 @@ namespace Memory
                         item.fordit();
                 }
                 Lap.LevettParokSzama = 0;
-                idomeres = 0;
+                if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
+                    idomeres = lapokSzama * 10;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                    idomeres = lapokSzama * 5;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
+                    idomeres = lapokSzama * 2;
                 probalkozasokSzama = 0;
                 nmrcUpDown_SorDb.Enabled = true;
                 cmbBx_nehezseg.Enabled = true;
@@ -142,12 +157,26 @@ namespace Memory
                     bttn_UjJatek.Text = "Leállít";
                     tmr_idomeres.Enabled = true;
                 }
+
+                if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
+                    idomeres = lapokSzama * 10;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                    idomeres = lapokSzama * 5;
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
+                    idomeres = lapokSzama * 2;
             }
         }
 
         private void tmr_Timer_Tick(object sender, EventArgs e)
         {
-            probalkozasokSzama++;           
+            probalkozasokSzama++;
+            if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
+                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 10) - probalkozasokSzama);
+            else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 5) - probalkozasokSzama);
+            else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
+                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 1.5) - probalkozasokSzama);
+
             if (Lap.Levenni && Lap.ElozoLap != Lap.AktualisLap)
             {
                 Lap.ElozoLap.levesz();
@@ -177,22 +206,19 @@ namespace Memory
                 }
             }            
             tmr_Timer.Enabled = false;
-            Lap.MegforditottLapokSzama = 0;
-            if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
-                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 10) - probalkozasokSzama);
-            else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
-                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 5) - probalkozasokSzama);
-            else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
-                lbl_probalkozasok.Text = "Rendelkezésre álló próbálkozások száma: " + ((lapokSzama * 1.5) - probalkozasokSzama);
-
+            Lap.MegforditottLapokSzama = 0;            
         }
 
         private void tmr_idomeres_Tick(object sender, EventArgs e)
         {
             if (bttn_UjJatek.Text == "Leállít")
-            {
+            {               
                 lbl_ido.Text = "Játékidő: " + idomeres;
-                idomeres++;
+                idomeres--;
+                if (idomeres == 0)
+                {
+                    uzenet(false);
+                }
             }
         }        
     }
