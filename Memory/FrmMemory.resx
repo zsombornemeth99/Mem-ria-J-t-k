@@ -120,10 +120,325 @@
   <metadata name="fp_Panel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fp_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="fp_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>533, 480</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fp_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fp_Panel.Name" xml:space="preserve">
+    <value>fp_Panel</value>
+  </data>
+  <data name="&gt;&gt;fp_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fp_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fp_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbBx_nehezseg.Items" xml:space="preserve">
+    <value>Könnyű</value>
+  </data>
+  <data name="cmbBx_nehezseg.Items1" xml:space="preserve">
+    <value>Közepes</value>
+  </data>
+  <data name="cmbBx_nehezseg.Items2" xml:space="preserve">
+    <value>Nehéz</value>
+  </data>
+  <data name="cmbBx_nehezseg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 77</value>
+  </data>
+  <data name="cmbBx_nehezseg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="cmbBx_nehezseg.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cmbBx_nehezseg.Text" xml:space="preserve">
+    <value>Válasszon..</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Name" xml:space="preserve">
+    <value>cmbBx_nehezseg</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bttn_UjJatek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 171</value>
+  </data>
+  <data name="bttn_UjJatek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 31</value>
+  </data>
+  <data name="bttn_UjJatek.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="bttn_UjJatek.Text" xml:space="preserve">
+    <value>Új játék</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Name" xml:space="preserve">
+    <value>bttn_UjJatek</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nmrcUpDown_SorDb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 24</value>
+  </data>
+  <data name="nmrcUpDown_SorDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="nmrcUpDown_SorDb.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Name" xml:space="preserve">
+    <value>nmrcUpDown_SorDb</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_nehezseg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_nehezseg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_nehezseg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 84</value>
+  </data>
+  <data name="lbl_nehezseg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 17</value>
+  </data>
+  <data name="lbl_nehezseg.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_nehezseg.Text" xml:space="preserve">
+    <value>Nehézségi szint:</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Name" xml:space="preserve">
+    <value>lbl_nehezseg</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_SorOszlop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
+  </data>
+  <data name="lbl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 17</value>
+  </data>
+  <data name="lbl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_SorOszlop.Text" xml:space="preserve">
+    <value>Sor/Oszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Name" xml:space="preserve">
+    <value>lbl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>581, 12</value>
+  </data>
+  <data name="pnl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 216</value>
+  </data>
+  <data name="pnl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Name" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_probalkozasok.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_probalkozasok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 10</value>
+  </data>
+  <data name="lbl_probalkozasok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 17</value>
+  </data>
+  <data name="lbl_probalkozasok.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_probalkozasok.Text" xml:space="preserve">
+    <value>Rendelkezésre álló próbálkozások száma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_probalkozasok.Name" xml:space="preserve">
+    <value>lbl_probalkozasok</value>
+  </data>
+  <data name="&gt;&gt;lbl_probalkozasok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_probalkozasok.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_probalkozasok.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_ido.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 10</value>
+  </data>
+  <data name="lbl_ido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="lbl_ido.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_ido.Text" xml:space="preserve">
+    <value>Játékidő:</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Name" xml:space="preserve">
+    <value>lbl_ido</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_LevettParok.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_LevettParok.Location" type="System.Drawing.Point, System.Drawing">
+    <value>686, 10</value>
+  </data>
+  <data name="lbl_LevettParok.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="lbl_LevettParok.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_LevettParok.Text" xml:space="preserve">
+    <value>Levett párok:</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.Name" xml:space="preserve">
+    <value>lbl_LevettParok</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnl_Footer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 532</value>
+  </data>
+  <data name="pnl_Footer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>833, 37</value>
+  </data>
+  <data name="pnl_Footer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.Name" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="tmr_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="tmr_idomeres.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>142, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>833, 569</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Memória Játék</value>
+  </data>
+  <data name="&gt;&gt;tmr_Timer.Name" xml:space="preserve">
+    <value>tmr_Timer</value>
+  </data>
+  <data name="&gt;&gt;tmr_Timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmr_idomeres.Name" xml:space="preserve">
+    <value>tmr_idomeres</value>
+  </data>
+  <data name="&gt;&gt;tmr_idomeres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmMemory</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

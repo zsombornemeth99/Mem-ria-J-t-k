@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMemory.hu-HU.resx">
+      <DependentUpon>FrmMemory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMemory.resx">
       <DependentUpon>FrmMemory.cs</DependentUpon>
     </EmbeddedResource>
