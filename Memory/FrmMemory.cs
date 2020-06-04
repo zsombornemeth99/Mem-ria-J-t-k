@@ -353,10 +353,17 @@ namespace Memory
 
         private void ranglistaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Ranglista r = new Ranglista();
-            r.ShowDialog();
-            this.Close();
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }           
         }
     }
 }

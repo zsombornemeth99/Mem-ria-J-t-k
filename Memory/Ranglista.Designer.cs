@@ -70,9 +70,8 @@
             this.lbl_elso.ForeColor = System.Drawing.Color.Red;
             this.lbl_elso.Location = new System.Drawing.Point(11, 151);
             this.lbl_elso.Name = "lbl_elso";
-            this.lbl_elso.Size = new System.Drawing.Size(33, 32);
+            this.lbl_elso.Size = new System.Drawing.Size(0, 32);
             this.lbl_elso.TabIndex = 1;
-            this.lbl_elso.Text = "1.";
             // 
             // lbl_masodik
             // 
@@ -81,9 +80,8 @@
             this.lbl_masodik.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_masodik.Location = new System.Drawing.Point(11, 237);
             this.lbl_masodik.Name = "lbl_masodik";
-            this.lbl_masodik.Size = new System.Drawing.Size(33, 32);
+            this.lbl_masodik.Size = new System.Drawing.Size(0, 32);
             this.lbl_masodik.TabIndex = 1;
-            this.lbl_masodik.Text = "2.";
             // 
             // lbl_harmadik
             // 
@@ -92,9 +90,8 @@
             this.lbl_harmadik.ForeColor = System.Drawing.Color.Lime;
             this.lbl_harmadik.Location = new System.Drawing.Point(11, 323);
             this.lbl_harmadik.Name = "lbl_harmadik";
-            this.lbl_harmadik.Size = new System.Drawing.Size(33, 32);
+            this.lbl_harmadik.Size = new System.Drawing.Size(0, 32);
             this.lbl_harmadik.TabIndex = 1;
-            this.lbl_harmadik.Text = "3.";
             // 
             // lbl_elsoNev
             // 
@@ -103,9 +100,8 @@
             this.lbl_elsoNev.ForeColor = System.Drawing.Color.Red;
             this.lbl_elsoNev.Location = new System.Drawing.Point(189, 151);
             this.lbl_elsoNev.Name = "lbl_elsoNev";
-            this.lbl_elsoNev.Size = new System.Drawing.Size(54, 32);
+            this.lbl_elsoNev.Size = new System.Drawing.Size(0, 32);
             this.lbl_elsoNev.TabIndex = 2;
-            this.lbl_elsoNev.Text = "nev";
             // 
             // lbl_masodikNev
             // 
@@ -114,9 +110,8 @@
             this.lbl_masodikNev.ForeColor = System.Drawing.SystemColors.Info;
             this.lbl_masodikNev.Location = new System.Drawing.Point(189, 237);
             this.lbl_masodikNev.Name = "lbl_masodikNev";
-            this.lbl_masodikNev.Size = new System.Drawing.Size(54, 32);
+            this.lbl_masodikNev.Size = new System.Drawing.Size(0, 32);
             this.lbl_masodikNev.TabIndex = 2;
-            this.lbl_masodikNev.Text = "nev";
             // 
             // lbl_harmadikNev
             // 
@@ -125,9 +120,8 @@
             this.lbl_harmadikNev.ForeColor = System.Drawing.Color.Lime;
             this.lbl_harmadikNev.Location = new System.Drawing.Point(189, 323);
             this.lbl_harmadikNev.Name = "lbl_harmadikNev";
-            this.lbl_harmadikNev.Size = new System.Drawing.Size(54, 32);
+            this.lbl_harmadikNev.Size = new System.Drawing.Size(0, 32);
             this.lbl_harmadikNev.TabIndex = 2;
-            this.lbl_harmadikNev.Text = "nev";
             // 
             // lbl_helyezes
             // 
@@ -180,9 +174,8 @@
             this.lbl_elsoSzint.ForeColor = System.Drawing.Color.Red;
             this.lbl_elsoSzint.Location = new System.Drawing.Point(353, 151);
             this.lbl_elsoSzint.Name = "lbl_elsoSzint";
-            this.lbl_elsoSzint.Size = new System.Drawing.Size(64, 32);
+            this.lbl_elsoSzint.Size = new System.Drawing.Size(0, 32);
             this.lbl_elsoSzint.TabIndex = 2;
-            this.lbl_elsoSzint.Text = "szint";
             // 
             // lbl_masodikSzint
             // 
@@ -191,9 +184,8 @@
             this.lbl_masodikSzint.ForeColor = System.Drawing.SystemColors.Info;
             this.lbl_masodikSzint.Location = new System.Drawing.Point(353, 237);
             this.lbl_masodikSzint.Name = "lbl_masodikSzint";
-            this.lbl_masodikSzint.Size = new System.Drawing.Size(64, 32);
+            this.lbl_masodikSzint.Size = new System.Drawing.Size(0, 32);
             this.lbl_masodikSzint.TabIndex = 2;
-            this.lbl_masodikSzint.Text = "szint";
             // 
             // lbl_harmadikSzint
             // 
@@ -202,9 +194,8 @@
             this.lbl_harmadikSzint.ForeColor = System.Drawing.Color.Lime;
             this.lbl_harmadikSzint.Location = new System.Drawing.Point(353, 323);
             this.lbl_harmadikSzint.Name = "lbl_harmadikSzint";
-            this.lbl_harmadikSzint.Size = new System.Drawing.Size(64, 32);
+            this.lbl_harmadikSzint.Size = new System.Drawing.Size(0, 32);
             this.lbl_harmadikSzint.TabIndex = 2;
-            this.lbl_harmadikSzint.Text = "szint";
             // 
             // lbl_elsoIdo
             // 
@@ -213,9 +204,8 @@
             this.lbl_elsoIdo.ForeColor = System.Drawing.Color.Red;
             this.lbl_elsoIdo.Location = new System.Drawing.Point(518, 151);
             this.lbl_elsoIdo.Name = "lbl_elsoIdo";
-            this.lbl_elsoIdo.Size = new System.Drawing.Size(49, 32);
+            this.lbl_elsoIdo.Size = new System.Drawing.Size(0, 32);
             this.lbl_elsoIdo.TabIndex = 2;
-            this.lbl_elsoIdo.Text = "ido";
             // 
             // lbl_masodikIdo
             // 
@@ -224,9 +214,8 @@
             this.lbl_masodikIdo.ForeColor = System.Drawing.SystemColors.Info;
             this.lbl_masodikIdo.Location = new System.Drawing.Point(518, 237);
             this.lbl_masodikIdo.Name = "lbl_masodikIdo";
-            this.lbl_masodikIdo.Size = new System.Drawing.Size(49, 32);
+            this.lbl_masodikIdo.Size = new System.Drawing.Size(0, 32);
             this.lbl_masodikIdo.TabIndex = 2;
-            this.lbl_masodikIdo.Text = "ido";
             // 
             // lbl_harmadikIdo
             // 
@@ -235,9 +224,8 @@
             this.lbl_harmadikIdo.ForeColor = System.Drawing.Color.Lime;
             this.lbl_harmadikIdo.Location = new System.Drawing.Point(518, 323);
             this.lbl_harmadikIdo.Name = "lbl_harmadikIdo";
-            this.lbl_harmadikIdo.Size = new System.Drawing.Size(49, 32);
+            this.lbl_harmadikIdo.Size = new System.Drawing.Size(0, 32);
             this.lbl_harmadikIdo.TabIndex = 2;
-            this.lbl_harmadikIdo.Text = "ido";
             // 
             // menu
             // 
@@ -246,7 +234,7 @@
             this.játékToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(682, 28);
+            this.menu.Size = new System.Drawing.Size(682, 30);
             this.menu.TabIndex = 4;
             this.menu.Text = "menuStrip1";
             // 
