@@ -16,7 +16,7 @@ namespace Memory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMemory());
+            Application.Run(new Kezdokepernyo());
         }
     }
 }

@@ -117,12 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="fp_Panel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="fp_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>15, 36</value>
   </data>
   <data name="fp_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>533, 480</value>
@@ -177,10 +174,10 @@
     <value>0</value>
   </data>
   <data name="bttn_UjJatek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 171</value>
+    <value>6, 167</value>
   </data>
   <data name="bttn_UjJatek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 31</value>
+    <value>229, 31</value>
   </data>
   <data name="bttn_UjJatek.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -280,7 +277,7 @@
     <value>4</value>
   </data>
   <data name="pnl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 12</value>
+    <value>581, 36</value>
   </data>
   <data name="pnl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 216</value>
@@ -408,6 +405,45 @@
   <metadata name="tmr_idomeres.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>142, 17</value>
   </metadata>
+  <metadata name="menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>292, 17</value>
+  </metadata>
+  <data name="ranglistaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="ranglistaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Ranglista</value>
+  </data>
+  <data name="ranglistaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="ranglistaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ranglista</value>
+  </data>
+  <data name="menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>833, 28</value>
+  </data>
+  <data name="menu.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="menu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menu.Name" xml:space="preserve">
+    <value>menu</value>
+  </data>
+  <data name="&gt;&gt;menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -434,6 +470,18 @@
   </data>
   <data name="&gt;&gt;tmr_idomeres.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ranglistaToolStripMenuItem.Name" xml:space="preserve">
+    <value>ranglistaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ranglistaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ranglistaToolStripMenuItem1.Name" xml:space="preserve">
+    <value>ranglistaToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;ranglistaToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMemory</value>

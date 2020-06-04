@@ -67,16 +67,32 @@
     <Compile Include="FrmMemory.Designer.cs">
       <DependentUpon>FrmMemory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helyezes.cs" />
+    <Compile Include="Kezdokepernyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kezdokepernyo.Designer.cs">
+      <DependentUpon>Kezdokepernyo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lap.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranglista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ranglista.Designer.cs">
+      <DependentUpon>Ranglista.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmMemory.hu-HU.resx">
       <DependentUpon>FrmMemory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMemory.resx">
       <DependentUpon>FrmMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kezdokepernyo.resx">
+      <DependentUpon>Kezdokepernyo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +103,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ranglista.resx">
+      <DependentUpon>Ranglista.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -32,20 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMemory));
             this.fp_Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_SorOszlop = new System.Windows.Forms.Panel();
+            this.cmbBx_nehezseg = new System.Windows.Forms.ComboBox();
             this.bttn_UjJatek = new System.Windows.Forms.Button();
             this.nmrcUpDown_SorDb = new System.Windows.Forms.NumericUpDown();
+            this.lbl_nehezseg = new System.Windows.Forms.Label();
             this.lbl_SorOszlop = new System.Windows.Forms.Label();
             this.pnl_Footer = new System.Windows.Forms.Panel();
+            this.lbl_probalkozasok = new System.Windows.Forms.Label();
             this.lbl_ido = new System.Windows.Forms.Label();
             this.lbl_LevettParok = new System.Windows.Forms.Label();
             this.tmr_Timer = new System.Windows.Forms.Timer(this.components);
             this.tmr_idomeres = new System.Windows.Forms.Timer(this.components);
-            this.lbl_nehezseg = new System.Windows.Forms.Label();
-            this.cmbBx_nehezseg = new System.Windows.Forms.ComboBox();
-            this.lbl_probalkozasok = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.MenuStrip();
+            this.ranglistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ranglistaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_SorOszlop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDown_SorDb)).BeginInit();
             this.pnl_Footer.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // fp_Panel
@@ -64,6 +68,17 @@
             this.pnl_SorOszlop.Controls.Add(this.lbl_SorOszlop);
             resources.ApplyResources(this.pnl_SorOszlop, "pnl_SorOszlop");
             this.pnl_SorOszlop.Name = "pnl_SorOszlop";
+            // 
+            // cmbBx_nehezseg
+            // 
+            this.cmbBx_nehezseg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbBx_nehezseg.FormattingEnabled = true;
+            this.cmbBx_nehezseg.Items.AddRange(new object[] {
+            resources.GetString("cmbBx_nehezseg.Items"),
+            resources.GetString("cmbBx_nehezseg.Items1"),
+            resources.GetString("cmbBx_nehezseg.Items2")});
+            resources.ApplyResources(this.cmbBx_nehezseg, "cmbBx_nehezseg");
+            this.cmbBx_nehezseg.Name = "cmbBx_nehezseg";
             // 
             // bttn_UjJatek
             // 
@@ -97,6 +112,11 @@
             0,
             0});
             // 
+            // lbl_nehezseg
+            // 
+            resources.ApplyResources(this.lbl_nehezseg, "lbl_nehezseg");
+            this.lbl_nehezseg.Name = "lbl_nehezseg";
+            // 
             // lbl_SorOszlop
             // 
             resources.ApplyResources(this.lbl_SorOszlop, "lbl_SorOszlop");
@@ -110,6 +130,11 @@
             this.pnl_Footer.Controls.Add(this.lbl_LevettParok);
             resources.ApplyResources(this.pnl_Footer, "pnl_Footer");
             this.pnl_Footer.Name = "pnl_Footer";
+            // 
+            // lbl_probalkozasok
+            // 
+            resources.ApplyResources(this.lbl_probalkozasok, "lbl_probalkozasok");
+            this.lbl_probalkozasok.Name = "lbl_probalkozasok";
             // 
             // lbl_ido
             // 
@@ -132,26 +157,26 @@
             this.tmr_idomeres.Interval = 1000;
             this.tmr_idomeres.Tick += new System.EventHandler(this.tmr_idomeres_Tick);
             // 
-            // lbl_nehezseg
+            // menu
             // 
-            resources.ApplyResources(this.lbl_nehezseg, "lbl_nehezseg");
-            this.lbl_nehezseg.Name = "lbl_nehezseg";
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ranglistaToolStripMenuItem});
+            resources.ApplyResources(this.menu, "menu");
+            this.menu.Name = "menu";
             // 
-            // cmbBx_nehezseg
+            // ranglistaToolStripMenuItem
             // 
-            this.cmbBx_nehezseg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbBx_nehezseg.FormattingEnabled = true;
-            this.cmbBx_nehezseg.Items.AddRange(new object[] {
-            resources.GetString("cmbBx_nehezseg.Items"),
-            resources.GetString("cmbBx_nehezseg.Items1"),
-            resources.GetString("cmbBx_nehezseg.Items2")});
-            resources.ApplyResources(this.cmbBx_nehezseg, "cmbBx_nehezseg");
-            this.cmbBx_nehezseg.Name = "cmbBx_nehezseg";
+            this.ranglistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ranglistaToolStripMenuItem1});
+            this.ranglistaToolStripMenuItem.Name = "ranglistaToolStripMenuItem";
+            resources.ApplyResources(this.ranglistaToolStripMenuItem, "ranglistaToolStripMenuItem");
             // 
-            // lbl_probalkozasok
+            // ranglistaToolStripMenuItem1
             // 
-            resources.ApplyResources(this.lbl_probalkozasok, "lbl_probalkozasok");
-            this.lbl_probalkozasok.Name = "lbl_probalkozasok";
+            this.ranglistaToolStripMenuItem1.Name = "ranglistaToolStripMenuItem1";
+            resources.ApplyResources(this.ranglistaToolStripMenuItem1, "ranglistaToolStripMenuItem1");
+            this.ranglistaToolStripMenuItem1.Click += new System.EventHandler(this.ranglistaToolStripMenuItem1_Click);
             // 
             // FrmMemory
             // 
@@ -160,7 +185,9 @@
             this.Controls.Add(this.pnl_Footer);
             this.Controls.Add(this.pnl_SorOszlop);
             this.Controls.Add(this.fp_Panel);
+            this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
             this.Name = "FrmMemory";
             this.pnl_SorOszlop.ResumeLayout(false);
@@ -168,7 +195,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDown_SorDb)).EndInit();
             this.pnl_Footer.ResumeLayout(false);
             this.pnl_Footer.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -187,6 +217,9 @@
         private System.Windows.Forms.ComboBox cmbBx_nehezseg;
         private System.Windows.Forms.Label lbl_nehezseg;
         private System.Windows.Forms.Label lbl_probalkozasok;
+        private System.Windows.Forms.MenuStrip menu;
+        private System.Windows.Forms.ToolStripMenuItem ranglistaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ranglistaToolStripMenuItem1;
     }
 }
 
