@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMemory));
             this.fp_Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_SorOszlop = new System.Windows.Forms.Panel();
+            this.lbl_udv = new System.Windows.Forms.Label();
             this.cmbBx_nehezseg = new System.Windows.Forms.ComboBox();
             this.bttn_UjJatek = new System.Windows.Forms.Button();
             this.nmrcUpDown_SorDb = new System.Windows.Forms.NumericUpDown();
@@ -46,6 +47,9 @@
             this.menu = new System.Windows.Forms.MenuStrip();
             this.ranglistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ranglistaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.szintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.közepesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nehézToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_SorOszlop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDown_SorDb)).BeginInit();
             this.pnl_Footer.SuspendLayout();
@@ -61,6 +65,7 @@
             // pnl_SorOszlop
             // 
             this.pnl_SorOszlop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_SorOszlop.Controls.Add(this.lbl_udv);
             this.pnl_SorOszlop.Controls.Add(this.cmbBx_nehezseg);
             this.pnl_SorOszlop.Controls.Add(this.bttn_UjJatek);
             this.pnl_SorOszlop.Controls.Add(this.nmrcUpDown_SorDb);
@@ -68,6 +73,11 @@
             this.pnl_SorOszlop.Controls.Add(this.lbl_SorOszlop);
             resources.ApplyResources(this.pnl_SorOszlop, "pnl_SorOszlop");
             this.pnl_SorOszlop.Name = "pnl_SorOszlop";
+            // 
+            // lbl_udv
+            // 
+            resources.ApplyResources(this.lbl_udv, "lbl_udv");
+            this.lbl_udv.Name = "lbl_udv";
             // 
             // cmbBx_nehezseg
             // 
@@ -174,9 +184,30 @@
             // 
             // ranglistaToolStripMenuItem1
             // 
+            this.ranglistaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.szintToolStripMenuItem,
+            this.közepesToolStripMenuItem,
+            this.nehézToolStripMenuItem});
             this.ranglistaToolStripMenuItem1.Name = "ranglistaToolStripMenuItem1";
             resources.ApplyResources(this.ranglistaToolStripMenuItem1, "ranglistaToolStripMenuItem1");
-            this.ranglistaToolStripMenuItem1.Click += new System.EventHandler(this.ranglistaToolStripMenuItem1_Click);
+            // 
+            // szintToolStripMenuItem
+            // 
+            this.szintToolStripMenuItem.Name = "szintToolStripMenuItem";
+            resources.ApplyResources(this.szintToolStripMenuItem, "szintToolStripMenuItem");
+            this.szintToolStripMenuItem.Click += new System.EventHandler(this.szintToolStripMenuItem_Click);
+            // 
+            // közepesToolStripMenuItem
+            // 
+            this.közepesToolStripMenuItem.Name = "közepesToolStripMenuItem";
+            resources.ApplyResources(this.közepesToolStripMenuItem, "közepesToolStripMenuItem");
+            this.közepesToolStripMenuItem.Click += new System.EventHandler(this.közepesToolStripMenuItem_Click);
+            // 
+            // nehézToolStripMenuItem
+            // 
+            this.nehézToolStripMenuItem.Name = "nehézToolStripMenuItem";
+            resources.ApplyResources(this.nehézToolStripMenuItem, "nehézToolStripMenuItem");
+            this.nehézToolStripMenuItem.Click += new System.EventHandler(this.nehézToolStripMenuItem_Click);
             // 
             // FrmMemory
             // 
@@ -220,6 +251,10 @@
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem ranglistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ranglistaToolStripMenuItem1;
+        private System.Windows.Forms.Label lbl_udv;
+        private System.Windows.Forms.ToolStripMenuItem szintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem közepesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nehézToolStripMenuItem;
     }
 }
 

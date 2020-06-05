@@ -17,11 +17,11 @@ namespace Memory
 
         public string Nev { get => nev; set => nev = value; }
 
-        public Ranglista(string nev)
+        public Ranglista(string nev,string szint)
         {
             this.nev = nev;
             InitializeComponent();
-            ranglistaMegjelenites();
+            ranglistaMegjelenites(szint);
         }
 
         private void újJátékToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,13 +40,13 @@ namespace Memory
             this.Close();
         }
 
-        private void ranglistaMegjelenites()
+        private void ranglistaMegjelenites(string szint)
         {
             // beolvasás, kilistázás
             List<string> rang = new List<string>();
             try
             {
-                StreamReader r = new StreamReader("ranglista.txt", Encoding.UTF8);
+                StreamReader r = new StreamReader("ranglista"+szint+".txt", Encoding.UTF8);
                 while (!r.EndOfStream)
                 {
                     string sor = r.ReadLine();
@@ -70,12 +70,7 @@ namespace Memory
                     {
                         lbl_elso.Text = "1.";
                         lbl_elsoNev.Text = "" + nev[i];
-                        if (eredmeny[i] == 1)
-                            lbl_elsoSzint.Text = "Könnyű";
-                        else if (eredmeny[i] == 2)
-                            lbl_elsoSzint.Text = "Közepes";
-                        else
-                            lbl_elsoSzint.Text = "Nehéz";
+                        lbl_elsoSzint.Text ="" +eredmeny[i];
                         lbl_elsoIdo.Text =ido[i]+" mp";
                     }
                     try
@@ -84,12 +79,7 @@ namespace Memory
                         {
                             lbl_masodik.Text = "2.";
                             lbl_masodikNev.Text = "" + nev[i];
-                            if (eredmeny[i] == 1)
-                                lbl_masodikSzint.Text = "Könnyű";
-                            else if (eredmeny[i] == 2)
-                                lbl_masodikSzint.Text = "Közepes";
-                            else
-                                lbl_masodikSzint.Text = "Nehéz";
+                            lbl_masodikSzint.Text = ""+eredmeny[i];
                             lbl_masodikIdo.Text = ido[i] + " mp";
                         }
                     }
@@ -103,12 +93,7 @@ namespace Memory
                         {
                             lbl_harmadik.Text = "3.";
                             lbl_harmadikNev.Text = "" + nev[i];
-                            if (eredmeny[i] == 1)
-                                lbl_harmadikSzint.Text = "Könnyű";
-                            else if (eredmeny[i] == 2)
-                                lbl_harmadikSzint.Text = "Közepes";
-                            else
-                                lbl_harmadikSzint.Text = "Nehéz";
+                            lbl_harmadikSzint.Text = ""+eredmeny[i];
                             lbl_harmadikIdo.Text = ido[i] + " mp";
                         }
                     }
@@ -128,6 +113,51 @@ namespace Memory
                 this.Close();
             }
 
+        }
+
+        private void könnyűToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev,"Konnyu");
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void közepesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev,"Kozepes");
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void nehézToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev,"Nehez");
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     } 
 }

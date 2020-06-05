@@ -23,7 +23,7 @@ namespace Memory
 
         private void bttn_tovabb_Click(object sender, EventArgs e)
         {
-            if (txtBx_nev.Text.Length >= 3)
+            if (txtBx_nev.Text.Length >= 3 && txtBx_nev.Text.Length <= 10)
             {
                 nev = txtBx_nev.Text;
                 this.Hide();
@@ -32,7 +32,7 @@ namespace Memory
                 this.Close();
             }
             else
-                MessageBox.Show("A névnek minimum 3 betűsnek kell lennie!","Hiba!");
+                MessageBox.Show("A névnek minimum 3, maximum 10 betűsnek kell lennie!", "Hiba!");
         }
     }
 }

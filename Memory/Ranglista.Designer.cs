@@ -49,6 +49,11 @@
             this.játékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.újJátékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bttn_vissza = new System.Windows.Forms.Button();
+            this.ranglistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.szintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.könnyűToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.közepesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nehézToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,7 +144,7 @@
             this.lbl_nev.AutoSize = true;
             this.lbl_nev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_nev.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_nev.Location = new System.Drawing.Point(197, 81);
+            this.lbl_nev.Location = new System.Drawing.Point(167, 81);
             this.lbl_nev.Name = "lbl_nev";
             this.lbl_nev.Size = new System.Drawing.Size(47, 28);
             this.lbl_nev.TabIndex = 3;
@@ -150,18 +155,18 @@
             this.lbl_szint.AutoSize = true;
             this.lbl_szint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_szint.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_szint.Location = new System.Drawing.Point(354, 81);
+            this.lbl_szint.Location = new System.Drawing.Point(296, 81);
             this.lbl_szint.Name = "lbl_szint";
-            this.lbl_szint.Size = new System.Drawing.Size(54, 28);
+            this.lbl_szint.Size = new System.Drawing.Size(140, 28);
             this.lbl_szint.TabIndex = 3;
-            this.lbl_szint.Text = "Szint";
+            this.lbl_szint.Text = "Próbálkozások";
             // 
             // lbl_ido
             // 
             this.lbl_ido.AutoSize = true;
             this.lbl_ido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_ido.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_ido.Location = new System.Drawing.Point(519, 81);
+            this.lbl_ido.Location = new System.Drawing.Point(518, 81);
             this.lbl_ido.Name = "lbl_ido";
             this.lbl_ido.Size = new System.Drawing.Size(41, 28);
             this.lbl_ido.TabIndex = 3;
@@ -231,10 +236,11 @@
             // 
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ranglistaToolStripMenuItem,
             this.játékToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(682, 30);
+            this.menu.Size = new System.Drawing.Size(682, 28);
             this.menu.TabIndex = 4;
             this.menu.Text = "menuStrip1";
             // 
@@ -249,7 +255,7 @@
             // újJátékToolStripMenuItem
             // 
             this.újJátékToolStripMenuItem.Name = "újJátékToolStripMenuItem";
-            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.újJátékToolStripMenuItem.Text = "Új játék";
             this.újJátékToolStripMenuItem.Click += new System.EventHandler(this.újJátékToolStripMenuItem_Click);
             // 
@@ -262,6 +268,45 @@
             this.bttn_vissza.Text = "Új játék";
             this.bttn_vissza.UseVisualStyleBackColor = true;
             this.bttn_vissza.Click += new System.EventHandler(this.bttn_vissza_Click);
+            // 
+            // ranglistaToolStripMenuItem
+            // 
+            this.ranglistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.szintToolStripMenuItem});
+            this.ranglistaToolStripMenuItem.Name = "ranglistaToolStripMenuItem";
+            this.ranglistaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.ranglistaToolStripMenuItem.Text = "Ranglista";
+            // 
+            // szintToolStripMenuItem
+            // 
+            this.szintToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.könnyűToolStripMenuItem,
+            this.közepesToolStripMenuItem,
+            this.nehézToolStripMenuItem});
+            this.szintToolStripMenuItem.Name = "szintToolStripMenuItem";
+            this.szintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.szintToolStripMenuItem.Text = "Szint";
+            // 
+            // könnyűToolStripMenuItem
+            // 
+            this.könnyűToolStripMenuItem.Name = "könnyűToolStripMenuItem";
+            this.könnyűToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.könnyűToolStripMenuItem.Text = "Könnyű";
+            this.könnyűToolStripMenuItem.Click += new System.EventHandler(this.könnyűToolStripMenuItem_Click);
+            // 
+            // közepesToolStripMenuItem
+            // 
+            this.közepesToolStripMenuItem.Name = "közepesToolStripMenuItem";
+            this.közepesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.közepesToolStripMenuItem.Text = "Közepes";
+            this.közepesToolStripMenuItem.Click += new System.EventHandler(this.közepesToolStripMenuItem_Click);
+            // 
+            // nehézToolStripMenuItem
+            // 
+            this.nehézToolStripMenuItem.Name = "nehézToolStripMenuItem";
+            this.nehézToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nehézToolStripMenuItem.Text = "Nehéz";
+            this.nehézToolStripMenuItem.Click += new System.EventHandler(this.nehézToolStripMenuItem_Click);
             // 
             // Ranglista
             // 
@@ -324,5 +369,10 @@
         private System.Windows.Forms.ToolStripMenuItem játékToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem újJátékToolStripMenuItem;
         private System.Windows.Forms.Button bttn_vissza;
+        private System.Windows.Forms.ToolStripMenuItem ranglistaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem szintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem könnyűToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem közepesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nehézToolStripMenuItem;
     }
 }

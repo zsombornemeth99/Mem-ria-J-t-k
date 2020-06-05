@@ -9,26 +9,26 @@ namespace Memory
     class Helyezes
     {
         private String nev;
-        private int szint;
+        private int probalkozasokSzama;
         private long jatszottMasodperc;
 
         public Helyezes(String sor)
         {
             String[] adatok = sor.Split(';');
             this.nev = adatok[0];
-            this.szint = int.Parse(adatok[1]);
+            this.ProbalkozasokSzama = int.Parse(adatok[1]);
             this.jatszottMasodperc = long.Parse(adatok[2]);
         }
 
         public Helyezes(string nev, int szint, long jatszottMasodperc)
         {
             this.nev = nev;
-            this.szint = szint;
+            this.ProbalkozasokSzama = szint;
             this.jatszottMasodperc = jatszottMasodperc;
         }
 
         public string Nev { get => nev; set => nev = value; }
         public long JatszottMasodperc { get => jatszottMasodperc; set => jatszottMasodperc = value; }
-        public int Szint { get => szint; set => szint = value; }
+        public int ProbalkozasokSzama { get => probalkozasokSzama; set => probalkozasokSzama = value; }
     }
 }

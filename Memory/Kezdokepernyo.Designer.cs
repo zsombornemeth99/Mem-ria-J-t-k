@@ -58,9 +58,10 @@
             // 
             // txtBx_nev
             // 
-            this.txtBx_nev.Location = new System.Drawing.Point(341, 132);
+            this.txtBx_nev.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtBx_nev.Location = new System.Drawing.Point(341, 116);
             this.txtBx_nev.Name = "txtBx_nev";
-            this.txtBx_nev.Size = new System.Drawing.Size(273, 25);
+            this.txtBx_nev.Size = new System.Drawing.Size(273, 43);
             this.txtBx_nev.TabIndex = 1;
             // 
             // bttn_tovabb

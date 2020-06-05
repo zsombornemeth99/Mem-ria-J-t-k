@@ -140,6 +140,126 @@
   <data name="&gt;&gt;fp_Panel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;lbl_udv.Name" xml:space="preserve">
+    <value>lbl_udv</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Name" xml:space="preserve">
+    <value>cmbBx_nehezseg</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;cmbBx_nehezseg.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Name" xml:space="preserve">
+    <value>bttn_UjJatek</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;bttn_UjJatek.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Name" xml:space="preserve">
+    <value>nmrcUpDown_SorDb</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;nmrcUpDown_SorDb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Name" xml:space="preserve">
+    <value>lbl_nehezseg</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_nehezseg.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Name" xml:space="preserve">
+    <value>lbl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_SorOszlop.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pnl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>581, 36</value>
+  </data>
+  <data name="pnl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 216</value>
+  </data>
+  <data name="pnl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Name" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_SorOszlop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_udv.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_udv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 134</value>
+  </data>
+  <data name="lbl_udv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="lbl_udv.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_udv.Text" xml:space="preserve">
+    <value>Jó játékot, </value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.Name" xml:space="preserve">
+    <value>lbl_udv</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.Parent" xml:space="preserve">
+    <value>pnl_SorOszlop</value>
+  </data>
+  <data name="&gt;&gt;lbl_udv.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="cmbBx_nehezseg.Items" xml:space="preserve">
     <value>Könnyű</value>
   </data>
@@ -171,7 +291,7 @@
     <value>pnl_SorOszlop</value>
   </data>
   <data name="&gt;&gt;cmbBx_nehezseg.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="bttn_UjJatek.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 167</value>
@@ -195,7 +315,7 @@
     <value>pnl_SorOszlop</value>
   </data>
   <data name="&gt;&gt;bttn_UjJatek.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="nmrcUpDown_SorDb.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 24</value>
@@ -216,7 +336,7 @@
     <value>pnl_SorOszlop</value>
   </data>
   <data name="&gt;&gt;nmrcUpDown_SorDb.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lbl_nehezseg.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -226,7 +346,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_nehezseg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 84</value>
+    <value>3, 80</value>
   </data>
   <data name="lbl_nehezseg.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 17</value>
@@ -247,7 +367,7 @@
     <value>pnl_SorOszlop</value>
   </data>
   <data name="&gt;&gt;lbl_nehezseg.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lbl_SorOszlop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -274,28 +394,64 @@
     <value>pnl_SorOszlop</value>
   </data>
   <data name="&gt;&gt;lbl_SorOszlop.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="pnl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 36</value>
+  <data name="&gt;&gt;lbl_probalkozasok.Name" xml:space="preserve">
+    <value>lbl_probalkozasok</value>
   </data>
-  <data name="pnl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 216</value>
+  <data name="&gt;&gt;lbl_probalkozasok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pnl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;lbl_probalkozasok.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_probalkozasok.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Name" xml:space="preserve">
+    <value>lbl_ido</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_ido.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Name" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+  <data name="&gt;&gt;lbl_LevettParok.Name" xml:space="preserve">
+    <value>lbl_LevettParok</value>
   </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_LevettParok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.Parent" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;lbl_LevettParok.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnl_Footer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 532</value>
+  </data>
+  <data name="pnl_Footer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>833, 37</value>
+  </data>
+  <data name="pnl_Footer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.Name" xml:space="preserve">
+    <value>pnl_Footer</value>
+  </data>
+  <data name="&gt;&gt;pnl_Footer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnl_Footer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pnl_SorOszlop.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;pnl_Footer.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lbl_probalkozasok.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -378,27 +534,6 @@
   <data name="&gt;&gt;lbl_LevettParok.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pnl_Footer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 532</value>
-  </data>
-  <data name="pnl_Footer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>833, 37</value>
-  </data>
-  <data name="pnl_Footer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnl_Footer.Name" xml:space="preserve">
-    <value>pnl_Footer</value>
-  </data>
-  <data name="&gt;&gt;pnl_Footer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_Footer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnl_Footer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="tmr_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -408,11 +543,29 @@
   <metadata name="menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>292, 17</value>
   </metadata>
+  <data name="szintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="szintToolStripMenuItem.Text" xml:space="preserve">
+    <value>Könnyű</value>
+  </data>
+  <data name="közepesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="közepesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Közepes</value>
+  </data>
+  <data name="nehézToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="nehézToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nehéz</value>
+  </data>
   <data name="ranglistaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 26</value>
   </data>
   <data name="ranglistaToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Ranglista</value>
+    <value>Szint</value>
   </data>
   <data name="ranglistaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 24</value>
@@ -481,6 +634,24 @@
     <value>ranglistaToolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;ranglistaToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;szintToolStripMenuItem.Name" xml:space="preserve">
+    <value>szintToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;szintToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;közepesToolStripMenuItem.Name" xml:space="preserve">
+    <value>közepesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;közepesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nehézToolStripMenuItem.Name" xml:space="preserve">
+    <value>nehézToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nehézToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

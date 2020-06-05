@@ -18,7 +18,7 @@ namespace Memory
         private int sorokSzama;
         private int lapokSzama;
         private int idomeres;
-        private int jatekido=0;
+        private int jatekido = 0;
         private int probalkozasokSzama;
         private string nev;
 
@@ -30,139 +30,145 @@ namespace Memory
             InitializeComponent();
             //megjelenites();
             this.nev = nev;
+            lbl_udv.Text += this.nev + "!";
         }
         public FrmMemory()
         {
             InitializeComponent();
+            lbl_udv.Text += this.nev + "!";
+        }
+
+        private void ranglistaSzintek(string szint)
+        {
+            int probalkozasokSzama = this.probalkozasokSzama;
+            string nev = this.nev;
+            long jatekIdo = this.jatekido;
+            IList<Helyezes> rangLista;
+            if (File.Exists("ranglista" + szint + ".txt"))
+            {
+
+                List<string> sor = new List<string>();
+                StreamReader sr = new StreamReader("ranglista" + szint + ".txt", Encoding.UTF8);
+                while (!sr.EndOfStream)
+                {
+                    sor.Add(sr.ReadLine());
+                }
+                sr.Close();
+                //File.Delete("ranglista.txt");
+                if (sor.Count == 1)
+                {
+                    rangLista = new List<Helyezes>()
+                        {
+                            new Helyezes(sor[0]),
+                            new Helyezes(nev,probalkozasokSzama,jatekIdo)
+                        };
+                    var result = rangLista.OrderByDescending(s => s.ProbalkozasokSzama).ThenBy(s => s.JatszottMasodperc);
+                    StreamWriter sw = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                    foreach (var std in result)
+                    {
+                        sw.WriteLine(std.Nev + ";" + std.ProbalkozasokSzama + ";" + std.JatszottMasodperc);
+                    }
+                    sw.Close();
+                }
+                else if (sor.Count == 2)
+                {
+                    rangLista = new List<Helyezes>()
+                        {
+                            new Helyezes(sor[0]),
+                            new Helyezes(sor[1]),
+                            new Helyezes(nev,probalkozasokSzama,jatekIdo)
+                        };
+                    var result = rangLista.OrderByDescending(s => s.ProbalkozasokSzama).ThenBy(s => s.JatszottMasodperc);
+                    StreamWriter sw = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                    foreach (var std in result)
+                    {
+                        sw.WriteLine(std.Nev + ";" + std.ProbalkozasokSzama + ";" + std.JatszottMasodperc);
+                    }
+                    sw.Close();
+                }
+                else if (sor.Count == 3)
+                {
+                    rangLista = new List<Helyezes>()
+                        {
+                            new Helyezes(sor[0]),
+                            new Helyezes(sor[1]),
+                            new Helyezes(sor[2]),
+                            new Helyezes(nev,probalkozasokSzama,jatekIdo)
+                        };
+                    var result = rangLista.OrderByDescending(s => s.ProbalkozasokSzama).ThenBy(s => s.JatszottMasodperc);
+                    StreamWriter sw = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                    foreach (var std in result)
+                    {
+                        sw.WriteLine(std.Nev + ";" + std.ProbalkozasokSzama + ";" + std.JatszottMasodperc);
+                    }
+                    sw.Close();
+                }
+                else
+                {
+                    rangLista = new List<Helyezes>()
+                        {
+                            new Helyezes(sor[sor.Count-1]),
+                            new Helyezes(nev,probalkozasokSzama,jatekIdo)
+                        };
+                    var result = rangLista.OrderByDescending(s => s.ProbalkozasokSzama).ThenBy(s => s.JatszottMasodperc);
+                    StreamWriter sw = new StreamWriter("ranglistaIdeiglenes.txt", false, Encoding.UTF8);
+                    foreach (var std in result)
+                    {
+                        sw.WriteLine(std.Nev + ";" + std.ProbalkozasokSzama + ";" + std.JatszottMasodperc);
+                    }
+                    sw.Close();
+                    List<string> ideiglenesLista = new List<string>();
+                    StreamReader sre = new StreamReader("ranglistaIdeiglenes.txt", Encoding.UTF8);
+                    while (!sre.EndOfStream)
+                    {
+                        ideiglenesLista.Add(sre.ReadLine());
+                    }
+
+                    string csere = ideiglenesLista[0];
+                    sor[sor.Count - 1] = csere;
+                    sre.Close();
+                    File.Delete("ranglistaIdeiglenes.txt");
+                    StreamWriter swr = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                    foreach (var item in sor)
+                    {
+                        swr.WriteLine(item);
+                    }
+                    swr.Close();
+                    File.Delete("ranglista" + szint + ".txt");
+                    rangLista = new List<Helyezes>()
+                        {
+                            new Helyezes(sor[0]),
+                            new Helyezes(sor[1]),
+                            new Helyezes(sor[2]),
+                            new Helyezes(nev,probalkozasokSzama,jatekIdo)
+                        };
+                    var result2 = rangLista.OrderByDescending(r => r.ProbalkozasokSzama).ThenBy(r => r.JatszottMasodperc);
+                    StreamWriter asd = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                    foreach (var std in result2)
+                    {
+                        asd.WriteLine(std.Nev + ";" + std.ProbalkozasokSzama + ";" + std.JatszottMasodperc);
+                    }
+                    asd.Close();
+                }
+            }
+            else
+            {
+                StreamWriter sw = new StreamWriter("ranglista" + szint + ".txt", false, Encoding.UTF8);
+                sw.WriteLine("{0};{1};{2}", nev, probalkozasokSzama, jatekIdo);
+                sw.Close();
+            }
         }
 
         private void ranglista()
         {
             try
             {
-                int szintLocal = 0;
                 if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű"))
-                    szintLocal = 1;
-                else if(cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
-                    szintLocal = 2;
+                    ranglistaSzintek("Konnyu");
+                else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes"))
+                    ranglistaSzintek("Kozepes");
                 else if (cmbBx_nehezseg.SelectedItem.Equals("Nehéz"))
-                    szintLocal = 3;
-                string nev = this.nev;
-                long jatekIdo = this.jatekido;
-                IList<Helyezes> rangLista;
-                if (File.Exists("ranglista.txt"))
-                {
-
-                    List<string> sor = new List<string>();
-                    StreamReader sr = new StreamReader("ranglista.txt", Encoding.UTF8);
-                    while (!sr.EndOfStream)
-                    {
-                        sor.Add(sr.ReadLine());
-                    }
-                    sr.Close();
-                    //File.Delete("ranglista.txt");
-                    if (sor.Count == 1)
-                    {
-                        rangLista = new List<Helyezes>()
-                        {
-                            new Helyezes(sor[0]),
-                            new Helyezes(nev,szintLocal,jatekIdo)
-                        };
-                        var result = rangLista.OrderByDescending(s => s.Szint).ThenBy(s => s.JatszottMasodperc);
-                        StreamWriter sw = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                        foreach (var std in result)
-                        {
-                            sw.WriteLine(std.Nev + ";" + std.Szint + ";" + std.JatszottMasodperc);
-                        }
-                        sw.Close();
-                    }
-                    else if (sor.Count == 2)
-                    {
-                        rangLista = new List<Helyezes>()
-                        {
-                            new Helyezes(sor[0]),
-                            new Helyezes(sor[1]),
-                            new Helyezes(nev,szintLocal,jatekIdo)
-                        };
-                        var result = rangLista.OrderByDescending(s => s.Szint).ThenBy(s => s.JatszottMasodperc);
-                        StreamWriter sw = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                        foreach (var std in result)
-                        {
-                            sw.WriteLine(std.Nev + ";" + std.Szint + ";" + std.JatszottMasodperc);
-                        }
-                        sw.Close();
-                    }
-                    else if (sor.Count == 3)
-                    {
-                        rangLista = new List<Helyezes>()
-                        {
-                            new Helyezes(sor[0]),
-                            new Helyezes(sor[1]),
-                            new Helyezes(sor[2]),
-                            new Helyezes(nev,szintLocal,jatekIdo)
-                        };
-                        var result = rangLista.OrderByDescending(s => s.Szint).ThenBy(s => s.JatszottMasodperc);
-                        StreamWriter sw = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                        foreach (var std in result)
-                        {
-                            sw.WriteLine(std.Nev + ";" + std.Szint + ";" + std.JatszottMasodperc);
-                        }
-                        sw.Close();
-                    }
-                    else
-                    {
-                        rangLista = new List<Helyezes>()
-                        {
-                            new Helyezes(sor[sor.Count-1]),
-                            new Helyezes(nev,szintLocal,jatekIdo)
-                        };
-                        var result = rangLista.OrderByDescending(s => s.Szint).ThenBy(s => s.JatszottMasodperc);
-                        StreamWriter sw = new StreamWriter("ranglistaIdeiglenes.txt", false, Encoding.UTF8);
-                        foreach (var std in result)
-                        {
-                            sw.WriteLine(std.Nev + ";" + std.Szint + ";" + std.JatszottMasodperc);
-                        }
-                        sw.Close();
-                        List<string> ideiglenesLista = new List<string>();
-                        StreamReader sre = new StreamReader("ranglistaIdeiglenes.txt", Encoding.UTF8);
-                        while (!sre.EndOfStream)
-                        {
-                            ideiglenesLista.Add(sre.ReadLine());
-                        }
-
-                        string csere = ideiglenesLista[0];
-                        sor[sor.Count - 1] = csere;
-                        sre.Close();
-                        File.Delete("ranglistaIdeiglenes.txt");
-                        StreamWriter swr = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                        foreach (var item in sor)
-                        {
-                            swr.WriteLine(item);
-                        }
-                        swr.Close();
-                        File.Delete("ranglista.txt");
-                        rangLista = new List<Helyezes>()
-                        {
-                            new Helyezes(sor[0]),
-                            new Helyezes(sor[1]),
-                            new Helyezes(sor[2]),
-                            new Helyezes(nev,szintLocal,jatekIdo)
-                        };
-                        var result2 = rangLista.OrderByDescending(r => r.Szint).ThenBy(r => r.JatszottMasodperc);
-                        StreamWriter asd = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                        foreach (var std in result2)
-                        {
-                            asd.WriteLine(std.Nev + ";" + std.Szint + ";" + std.JatszottMasodperc);
-                        }
-                        asd.Close();
-                    }
-                }
-                else
-                {
-                    StreamWriter sw = new StreamWriter("ranglista.txt", false, Encoding.UTF8);
-                    sw.WriteLine("{0};{1};{2}", nev, szintLocal, jatekIdo);
-                    sw.Close();
-                }
+                    ranglistaSzintek("Nehez");
             }
             catch (Exception e)
             {
@@ -286,7 +292,7 @@ namespace Memory
                         idomeres = lapokSzama * 2;
                 }
 
-                
+
             }
         }
 
@@ -308,7 +314,7 @@ namespace Memory
                 lbl_LevettParok.Text = "Levett párok: " + Lap.LevettParokSzama;
                 if (Lap.LevettParokSzama == (lapokSzama / 2))
                 {
-                    uzenet("Gratulálok, minden lapot levett!!","Gratulálok!");
+                    uzenet("Gratulálok, minden lapot levett!!", "Gratulálok!");
                     ranglista();
                 }
             }
@@ -318,7 +324,7 @@ namespace Memory
                 Lap.AktualisLap.fordit();
                 if (cmbBx_nehezseg.SelectedItem.Equals("Könnyű") && probalkozasokSzama >= lapokSzama * 10)
                 {
-                    uzenet("Sajnálom, de nem tudta teljesíteni ezt a szintet!!","Elfogyott próbálkozások");
+                    uzenet("Sajnálom, de nem tudta teljesíteni ezt a szintet!!", "Elfogyott próbálkozások");
                 }
                 else if (cmbBx_nehezseg.SelectedItem.Equals("Közepes") && probalkozasokSzama >= lapokSzama * 5)
                 {
@@ -351,19 +357,49 @@ namespace Memory
             }
         }
 
-        private void ranglistaToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void szintToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
                 this.Hide();
-                Ranglista r = new Ranglista(this.nev);
+                Ranglista r = new Ranglista(this.nev, "Konnyu");
                 r.ShowDialog();
                 this.Close();
             }
             catch (Exception)
             {
 
-            }           
+            }
+        }
+
+        private void közepesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Kozepes");
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void nehézToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Nehez");
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
