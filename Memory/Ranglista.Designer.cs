@@ -46,14 +46,18 @@
             this.lbl_masodikIdo = new System.Windows.Forms.Label();
             this.lbl_harmadikIdo = new System.Windows.Forms.Label();
             this.menu = new System.Windows.Forms.MenuStrip();
-            this.játékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.újJátékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bttn_vissza = new System.Windows.Forms.Button();
             this.ranglistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.szintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.könnyűToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.közepesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nehézToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.játékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.újJátékToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bttn_vissza = new System.Windows.Forms.Button();
+            this.lbl_LevettParok = new System.Windows.Forms.Label();
+            this.lbl_elsoLevett = new System.Windows.Forms.Label();
+            this.lbl_masodikLevett = new System.Windows.Forms.Label();
+            this.lbl_harmadikLevett = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,7 +148,7 @@
             this.lbl_nev.AutoSize = true;
             this.lbl_nev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_nev.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_nev.Location = new System.Drawing.Point(167, 81);
+            this.lbl_nev.Location = new System.Drawing.Point(165, 81);
             this.lbl_nev.Name = "lbl_nev";
             this.lbl_nev.Size = new System.Drawing.Size(47, 28);
             this.lbl_nev.TabIndex = 3;
@@ -155,7 +159,7 @@
             this.lbl_szint.AutoSize = true;
             this.lbl_szint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_szint.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_szint.Location = new System.Drawing.Point(296, 81);
+            this.lbl_szint.Location = new System.Drawing.Point(292, 81);
             this.lbl_szint.Name = "lbl_szint";
             this.lbl_szint.Size = new System.Drawing.Size(140, 28);
             this.lbl_szint.TabIndex = 3;
@@ -166,7 +170,7 @@
             this.lbl_ido.AutoSize = true;
             this.lbl_ido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_ido.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_ido.Location = new System.Drawing.Point(518, 81);
+            this.lbl_ido.Location = new System.Drawing.Point(512, 81);
             this.lbl_ido.Name = "lbl_ido";
             this.lbl_ido.Size = new System.Drawing.Size(41, 28);
             this.lbl_ido.TabIndex = 3;
@@ -207,7 +211,7 @@
             this.lbl_elsoIdo.AutoSize = true;
             this.lbl_elsoIdo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_elsoIdo.ForeColor = System.Drawing.Color.Red;
-            this.lbl_elsoIdo.Location = new System.Drawing.Point(518, 151);
+            this.lbl_elsoIdo.Location = new System.Drawing.Point(511, 151);
             this.lbl_elsoIdo.Name = "lbl_elsoIdo";
             this.lbl_elsoIdo.Size = new System.Drawing.Size(0, 32);
             this.lbl_elsoIdo.TabIndex = 2;
@@ -240,41 +244,16 @@
             this.játékToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(682, 28);
+            this.menu.Size = new System.Drawing.Size(764, 30);
             this.menu.TabIndex = 4;
             this.menu.Text = "menuStrip1";
-            // 
-            // játékToolStripMenuItem
-            // 
-            this.játékToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.újJátékToolStripMenuItem});
-            this.játékToolStripMenuItem.Name = "játékToolStripMenuItem";
-            this.játékToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
-            this.játékToolStripMenuItem.Text = "Játék";
-            // 
-            // újJátékToolStripMenuItem
-            // 
-            this.újJátékToolStripMenuItem.Name = "újJátékToolStripMenuItem";
-            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.újJátékToolStripMenuItem.Text = "Új játék";
-            this.újJátékToolStripMenuItem.Click += new System.EventHandler(this.újJátékToolStripMenuItem_Click);
-            // 
-            // bttn_vissza
-            // 
-            this.bttn_vissza.Location = new System.Drawing.Point(505, 391);
-            this.bttn_vissza.Name = "bttn_vissza";
-            this.bttn_vissza.Size = new System.Drawing.Size(165, 50);
-            this.bttn_vissza.TabIndex = 5;
-            this.bttn_vissza.Text = "Új játék";
-            this.bttn_vissza.UseVisualStyleBackColor = true;
-            this.bttn_vissza.Click += new System.EventHandler(this.bttn_vissza_Click);
             // 
             // ranglistaToolStripMenuItem
             // 
             this.ranglistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.szintToolStripMenuItem});
             this.ranglistaToolStripMenuItem.Name = "ranglistaToolStripMenuItem";
-            this.ranglistaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.ranglistaToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
             this.ranglistaToolStripMenuItem.Text = "Ranglista";
             // 
             // szintToolStripMenuItem
@@ -284,47 +263,114 @@
             this.közepesToolStripMenuItem,
             this.nehézToolStripMenuItem});
             this.szintToolStripMenuItem.Name = "szintToolStripMenuItem";
-            this.szintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.szintToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
             this.szintToolStripMenuItem.Text = "Szint";
             // 
             // könnyűToolStripMenuItem
             // 
             this.könnyűToolStripMenuItem.Name = "könnyűToolStripMenuItem";
-            this.könnyűToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.könnyűToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.könnyűToolStripMenuItem.Text = "Könnyű";
-            this.könnyűToolStripMenuItem.Click += new System.EventHandler(this.könnyűToolStripMenuItem_Click);
             // 
             // közepesToolStripMenuItem
             // 
             this.közepesToolStripMenuItem.Name = "közepesToolStripMenuItem";
-            this.közepesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.közepesToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.közepesToolStripMenuItem.Text = "Közepes";
-            this.közepesToolStripMenuItem.Click += new System.EventHandler(this.közepesToolStripMenuItem_Click);
             // 
             // nehézToolStripMenuItem
             // 
             this.nehézToolStripMenuItem.Name = "nehézToolStripMenuItem";
-            this.nehézToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nehézToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.nehézToolStripMenuItem.Text = "Nehéz";
-            this.nehézToolStripMenuItem.Click += new System.EventHandler(this.nehézToolStripMenuItem_Click);
+            // 
+            // játékToolStripMenuItem
+            // 
+            this.játékToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.újJátékToolStripMenuItem});
+            this.játékToolStripMenuItem.Name = "játékToolStripMenuItem";
+            this.játékToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.játékToolStripMenuItem.Text = "Játék";
+            // 
+            // újJátékToolStripMenuItem
+            // 
+            this.újJátékToolStripMenuItem.Name = "újJátékToolStripMenuItem";
+            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.újJátékToolStripMenuItem.Text = "Új játék";
+            this.újJátékToolStripMenuItem.Click += new System.EventHandler(this.újJátékToolStripMenuItem_Click);
+            // 
+            // bttn_vissza
+            // 
+            this.bttn_vissza.Location = new System.Drawing.Point(587, 391);
+            this.bttn_vissza.Name = "bttn_vissza";
+            this.bttn_vissza.Size = new System.Drawing.Size(165, 50);
+            this.bttn_vissza.TabIndex = 5;
+            this.bttn_vissza.Text = "Új játék";
+            this.bttn_vissza.UseVisualStyleBackColor = true;
+            this.bttn_vissza.Click += new System.EventHandler(this.bttn_vissza_Click);
+            // 
+            // lbl_LevettParok
+            // 
+            this.lbl_LevettParok.AutoSize = true;
+            this.lbl_LevettParok.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_LevettParok.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_LevettParok.Location = new System.Drawing.Point(633, 81);
+            this.lbl_LevettParok.Name = "lbl_LevettParok";
+            this.lbl_LevettParok.Size = new System.Drawing.Size(119, 28);
+            this.lbl_LevettParok.TabIndex = 3;
+            this.lbl_LevettParok.Text = "Levett Párok";
+            // 
+            // lbl_elsoLevett
+            // 
+            this.lbl_elsoLevett.AutoSize = true;
+            this.lbl_elsoLevett.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_elsoLevett.ForeColor = System.Drawing.Color.Red;
+            this.lbl_elsoLevett.Location = new System.Drawing.Point(632, 151);
+            this.lbl_elsoLevett.Name = "lbl_elsoLevett";
+            this.lbl_elsoLevett.Size = new System.Drawing.Size(0, 32);
+            this.lbl_elsoLevett.TabIndex = 2;
+            // 
+            // lbl_masodikLevett
+            // 
+            this.lbl_masodikLevett.AutoSize = true;
+            this.lbl_masodikLevett.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_masodikLevett.ForeColor = System.Drawing.SystemColors.Info;
+            this.lbl_masodikLevett.Location = new System.Drawing.Point(632, 237);
+            this.lbl_masodikLevett.Name = "lbl_masodikLevett";
+            this.lbl_masodikLevett.Size = new System.Drawing.Size(0, 32);
+            this.lbl_masodikLevett.TabIndex = 2;
+            // 
+            // lbl_harmadikLevett
+            // 
+            this.lbl_harmadikLevett.AutoSize = true;
+            this.lbl_harmadikLevett.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbl_harmadikLevett.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_harmadikLevett.Location = new System.Drawing.Point(632, 323);
+            this.lbl_harmadikLevett.Name = "lbl_harmadikLevett";
+            this.lbl_harmadikLevett.Size = new System.Drawing.Size(0, 32);
+            this.lbl_harmadikLevett.TabIndex = 2;
             // 
             // Ranglista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(682, 453);
+            this.ClientSize = new System.Drawing.Size(764, 453);
             this.Controls.Add(this.bttn_vissza);
+            this.Controls.Add(this.lbl_LevettParok);
             this.Controls.Add(this.lbl_ido);
             this.Controls.Add(this.lbl_szint);
             this.Controls.Add(this.lbl_nev);
             this.Controls.Add(this.lbl_helyezes);
+            this.Controls.Add(this.lbl_harmadikLevett);
             this.Controls.Add(this.lbl_harmadikIdo);
             this.Controls.Add(this.lbl_harmadikSzint);
             this.Controls.Add(this.lbl_harmadikNev);
+            this.Controls.Add(this.lbl_masodikLevett);
             this.Controls.Add(this.lbl_masodikIdo);
             this.Controls.Add(this.lbl_masodikSzint);
             this.Controls.Add(this.lbl_masodikNev);
+            this.Controls.Add(this.lbl_elsoLevett);
             this.Controls.Add(this.lbl_elsoIdo);
             this.Controls.Add(this.lbl_elsoSzint);
             this.Controls.Add(this.lbl_elsoNev);
@@ -374,5 +420,9 @@
         private System.Windows.Forms.ToolStripMenuItem könnyűToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem közepesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nehézToolStripMenuItem;
+        private System.Windows.Forms.Label lbl_LevettParok;
+        private System.Windows.Forms.Label lbl_elsoLevett;
+        private System.Windows.Forms.Label lbl_masodikLevett;
+        private System.Windows.Forms.Label lbl_harmadikLevett;
     }
 }

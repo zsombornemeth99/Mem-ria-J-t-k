@@ -17,11 +17,11 @@ namespace Memory
 
         public string Nev { get => nev; set => nev = value; }
 
-        public Ranglista(string nev,string szint)
+        public Ranglista(string nev,string szint, int SorOszlop)
         {
             this.nev = nev;
             InitializeComponent();
-            ranglistaMegjelenites(szint);
+            ranglistaMegjelenites(szint,SorOszlop);
         }
 
         private void újJátékToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,13 +40,13 @@ namespace Memory
             this.Close();
         }
 
-        private void ranglistaMegjelenites(string szint)
+        private void ranglistaMegjelenites(string szint, int SorOszlop)
         {
             // beolvasás, kilistázás
             List<string> rang = new List<string>();
             try
             {
-                StreamReader r = new StreamReader("ranglista"+szint+".txt", Encoding.UTF8);
+                StreamReader r = new StreamReader("ranglista"+szint+SorOszlop+".txt", Encoding.UTF8);
                 while (!r.EndOfStream)
                 {
                     string sor = r.ReadLine();
@@ -57,12 +57,14 @@ namespace Memory
                 List<string> nev = new List<string>();
                 List<int> eredmeny = new List<int>();
                 List<long> ido = new List<long>();
+                List<int> levettParok = new List<int>();
                 foreach (var item in rang)
                 {
                     adatok = item.Split(';');
                     nev.Add(adatok[0]);
                     eredmeny.Add(int.Parse(adatok[1]));
                     ido.Add(long.Parse(adatok[2]));
+                    levettParok.Add(int.Parse(adatok[3]));
                 }
                 for (int i = 0; i < 3; i++)
                 {
@@ -72,6 +74,7 @@ namespace Memory
                         lbl_elsoNev.Text = "" + nev[i];
                         lbl_elsoSzint.Text ="" +eredmeny[i];
                         lbl_elsoIdo.Text =ido[i]+" mp";
+                        lbl_elsoLevett.Text ="" + levettParok[i];
                     }
                     try
                     {
@@ -81,6 +84,7 @@ namespace Memory
                             lbl_masodikNev.Text = "" + nev[i];
                             lbl_masodikSzint.Text = ""+eredmeny[i];
                             lbl_masodikIdo.Text = ido[i] + " mp";
+                            lbl_masodikLevett.Text = "" + levettParok[i];
                         }
                     }
                     catch (Exception)
@@ -95,6 +99,7 @@ namespace Memory
                             lbl_harmadikNev.Text = "" + nev[i];
                             lbl_harmadikSzint.Text = ""+eredmeny[i];
                             lbl_harmadikIdo.Text = ido[i] + " mp";
+                            lbl_harmadikLevett.Text = "" + levettParok[i];
                         }
                     }
                     catch (Exception)
@@ -117,47 +122,17 @@ namespace Memory
 
         private void könnyűToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.Hide();
-                Ranglista r = new Ranglista(this.nev,"Konnyu");
-                r.ShowDialog();
-                this.Close();
-            }
-            catch (Exception)
-            {
 
-            }
         }
 
         private void közepesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.Hide();
-                Ranglista r = new Ranglista(this.nev,"Kozepes");
-                r.ShowDialog();
-                this.Close();
-            }
-            catch (Exception)
-            {
 
-            }
         }
 
         private void nehézToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.Hide();
-                Ranglista r = new Ranglista(this.nev,"Nehez");
-                r.ShowDialog();
-                this.Close();
-            }
-            catch (Exception)
-            {
 
-            }
         }
     } 
 }

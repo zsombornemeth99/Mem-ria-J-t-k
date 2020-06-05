@@ -140,104 +140,11 @@
   <data name="&gt;&gt;fp_Panel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lbl_udv.Name" xml:space="preserve">
-    <value>lbl_udv</value>
-  </data>
-  <data name="&gt;&gt;lbl_udv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_udv.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;lbl_udv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmbBx_nehezseg.Name" xml:space="preserve">
-    <value>cmbBx_nehezseg</value>
-  </data>
-  <data name="&gt;&gt;cmbBx_nehezseg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbBx_nehezseg.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;cmbBx_nehezseg.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;bttn_UjJatek.Name" xml:space="preserve">
-    <value>bttn_UjJatek</value>
-  </data>
-  <data name="&gt;&gt;bttn_UjJatek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bttn_UjJatek.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;bttn_UjJatek.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;nmrcUpDown_SorDb.Name" xml:space="preserve">
-    <value>nmrcUpDown_SorDb</value>
-  </data>
-  <data name="&gt;&gt;nmrcUpDown_SorDb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nmrcUpDown_SorDb.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;nmrcUpDown_SorDb.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lbl_nehezseg.Name" xml:space="preserve">
-    <value>lbl_nehezseg</value>
-  </data>
-  <data name="&gt;&gt;lbl_nehezseg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_nehezseg.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;lbl_nehezseg.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lbl_SorOszlop.Name" xml:space="preserve">
-    <value>lbl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;lbl_SorOszlop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_SorOszlop.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;lbl_SorOszlop.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pnl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 36</value>
-  </data>
-  <data name="pnl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 216</value>
-  </data>
-  <data name="pnl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Name" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
-  </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_SorOszlop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnl_SorOszlop.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="lbl_udv.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lbl_udv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 134</value>
+    <value>3, 138</value>
   </data>
   <data name="lbl_udv.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 17</value>
@@ -255,10 +162,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_udv.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lbl_udv.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="cmbBx_nehezseg.Items" xml:space="preserve">
     <value>Könnyű</value>
@@ -270,7 +177,7 @@
     <value>Nehéz</value>
   </data>
   <data name="cmbBx_nehezseg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 77</value>
+    <value>131, 73</value>
   </data>
   <data name="cmbBx_nehezseg.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
@@ -288,13 +195,13 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmbBx_nehezseg.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbBx_nehezseg.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="bttn_UjJatek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 167</value>
+    <value>6, 194</value>
   </data>
   <data name="bttn_UjJatek.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 31</value>
@@ -312,13 +219,13 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bttn_UjJatek.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;bttn_UjJatek.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="nmrcUpDown_SorDb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 24</value>
+    <value>178, 17</value>
   </data>
   <data name="nmrcUpDown_SorDb.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 22</value>
@@ -333,7 +240,7 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nmrcUpDown_SorDb.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;nmrcUpDown_SorDb.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -346,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_nehezseg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 80</value>
+    <value>3, 76</value>
   </data>
   <data name="lbl_nehezseg.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 17</value>
@@ -364,7 +271,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_nehezseg.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lbl_nehezseg.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -373,7 +280,7 @@
     <value>True</value>
   </data>
   <data name="lbl_SorOszlop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 26</value>
+    <value>3, 19</value>
   </data>
   <data name="lbl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 17</value>
@@ -391,10 +298,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_SorOszlop.Parent" xml:space="preserve">
-    <value>pnl_SorOszlop</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lbl_SorOszlop.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lbl_probalkozasok.Name" xml:space="preserve">
     <value>lbl_probalkozasok</value>
@@ -433,10 +340,10 @@
     <value>2</value>
   </data>
   <data name="pnl_Footer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 532</value>
+    <value>0, 643</value>
   </data>
   <data name="pnl_Footer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>833, 37</value>
+    <value>993, 37</value>
   </data>
   <data name="pnl_Footer.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -451,7 +358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnl_Footer.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lbl_probalkozasok.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -543,32 +450,8 @@
   <metadata name="menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>292, 17</value>
   </metadata>
-  <data name="szintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="szintToolStripMenuItem.Text" xml:space="preserve">
-    <value>Könnyű</value>
-  </data>
-  <data name="közepesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="közepesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Közepes</value>
-  </data>
-  <data name="nehézToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="nehézToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nehéz</value>
-  </data>
-  <data name="ranglistaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="ranglistaToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Szint</value>
-  </data>
   <data name="ranglistaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
+    <value>84, 26</value>
   </data>
   <data name="ranglistaToolStripMenuItem.Text" xml:space="preserve">
     <value>Ranglista</value>
@@ -577,7 +460,7 @@
     <value>0, 0</value>
   </data>
   <data name="menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>833, 28</value>
+    <value>993, 28</value>
   </data>
   <data name="menu.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -597,6 +480,141 @@
   <data name="&gt;&gt;menu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="ranglistaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 26</value>
+  </data>
+  <data name="ranglistaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Szint</value>
+  </data>
+  <data name="szintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="szintToolStripMenuItem.Text" xml:space="preserve">
+    <value>Könnyű</value>
+  </data>
+  <data name="sorOszlopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="sorOszlopToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sor/Oszlop</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem4.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="közepesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="közepesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Közepes</value>
+  </data>
+  <data name="sorOszlopToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="sorOszlopToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Sor/Oszlop</value>
+  </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem7.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="toolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem9.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Nehéz</value>
+  </data>
+  <data name="toolStripMenuItem10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="toolStripMenuItem10.Text" xml:space="preserve">
+    <value>Sor/Oszlop</value>
+  </data>
+  <data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem11.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolStripMenuItem12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem12.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="toolStripMenuItem13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem13.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="toolStripMenuItem14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="toolStripMenuItem14.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>695, 36</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 244</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -604,7 +622,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>833, 569</value>
+    <value>993, 680</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -642,16 +660,106 @@
   <data name="&gt;&gt;szintToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;sorOszlopToolStripMenuItem.Name" xml:space="preserve">
+    <value>sorOszlopToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;sorOszlopToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
+    <value>toolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
+    <value>toolStripMenuItem4</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
+    <value>toolStripMenuItem5</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;közepesToolStripMenuItem.Name" xml:space="preserve">
     <value>közepesToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;közepesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nehézToolStripMenuItem.Name" xml:space="preserve">
-    <value>nehézToolStripMenuItem</value>
+  <data name="&gt;&gt;sorOszlopToolStripMenuItem1.Name" xml:space="preserve">
+    <value>sorOszlopToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;nehézToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;sorOszlopToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
+    <value>toolStripMenuItem6</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem7.Name" xml:space="preserve">
+    <value>toolStripMenuItem7</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
+    <value>toolStripMenuItem8</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem9.Name" xml:space="preserve">
+    <value>toolStripMenuItem9</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem10.Name" xml:space="preserve">
+    <value>toolStripMenuItem10</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem11.Name" xml:space="preserve">
+    <value>toolStripMenuItem11</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem12.Name" xml:space="preserve">
+    <value>toolStripMenuItem12</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem13.Name" xml:space="preserve">
+    <value>toolStripMenuItem13</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem14.Name" xml:space="preserve">
+    <value>toolStripMenuItem14</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem14.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
