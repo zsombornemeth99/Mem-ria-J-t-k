@@ -120,19 +120,184 @@ namespace Memory
 
         }
 
-        private void könnyűToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Konnyu", 4);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
 
+            }
         }
 
-        private void közepesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Konnyu", 6);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
 
+            }
         }
 
-        private void nehézToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Konnyu", 8);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
 
+            }
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Konnyu", 10);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Kozepes", 4);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Kozepes", 6);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Kozepes", 8);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Kozepes", 10);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Nehez", 4);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Nehez", 6);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Nehez", 8);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Ranglista r = new Ranglista(this.nev, "Nehez", 10);
+                r.ShowDialog();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     } 
 }

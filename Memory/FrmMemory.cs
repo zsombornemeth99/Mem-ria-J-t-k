@@ -296,6 +296,7 @@ namespace Memory
                 nmrcUpDown_SorDb.Enabled = true;
                 cmbBx_nehezseg.Enabled = true;
                 bttn_UjJatek.Text = "Új játék";
+                ranglista();
             }
             else
             {

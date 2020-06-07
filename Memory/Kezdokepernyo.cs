@@ -34,5 +34,11 @@ namespace Memory
             else
                 MessageBox.Show("A névnek minimum 3, maximum 10 betűsnek kell lennie!", "Hiba!");
         }
+
+        private void txtBx_nev_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                bttn_tovabb_Click(sender, e);
+        }
     }
 }

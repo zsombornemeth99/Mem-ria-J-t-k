@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ranglista));
             this.lbl_top3 = new System.Windows.Forms.Label();
             this.lbl_elso = new System.Windows.Forms.Label();
             this.lbl_masodik = new System.Windows.Forms.Label();
@@ -58,6 +59,21 @@
             this.lbl_elsoLevett = new System.Windows.Forms.Label();
             this.lbl_masodikLevett = new System.Windows.Forms.Label();
             this.lbl_harmadikLevett = new System.Windows.Forms.Label();
+            this.sorOszlopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sorOszlopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sorOszlopToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,8 +81,8 @@
             // 
             this.lbl_top3.AutoSize = true;
             this.lbl_top3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_top3.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_top3.Location = new System.Drawing.Point(298, 37);
+            this.lbl_top3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_top3.Location = new System.Drawing.Point(353, 39);
             this.lbl_top3.Name = "lbl_top3";
             this.lbl_top3.Size = new System.Drawing.Size(74, 32);
             this.lbl_top3.TabIndex = 0;
@@ -136,7 +152,7 @@
             // 
             this.lbl_helyezes.AutoSize = true;
             this.lbl_helyezes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_helyezes.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_helyezes.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_helyezes.Location = new System.Drawing.Point(-3, 81);
             this.lbl_helyezes.Name = "lbl_helyezes";
             this.lbl_helyezes.Size = new System.Drawing.Size(88, 28);
@@ -147,7 +163,7 @@
             // 
             this.lbl_nev.AutoSize = true;
             this.lbl_nev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_nev.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_nev.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_nev.Location = new System.Drawing.Point(165, 81);
             this.lbl_nev.Name = "lbl_nev";
             this.lbl_nev.Size = new System.Drawing.Size(47, 28);
@@ -158,7 +174,7 @@
             // 
             this.lbl_szint.AutoSize = true;
             this.lbl_szint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_szint.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_szint.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_szint.Location = new System.Drawing.Point(292, 81);
             this.lbl_szint.Name = "lbl_szint";
             this.lbl_szint.Size = new System.Drawing.Size(140, 28);
@@ -169,7 +185,7 @@
             // 
             this.lbl_ido.AutoSize = true;
             this.lbl_ido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_ido.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_ido.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_ido.Location = new System.Drawing.Point(512, 81);
             this.lbl_ido.Name = "lbl_ido";
             this.lbl_ido.Size = new System.Drawing.Size(41, 28);
@@ -244,7 +260,7 @@
             this.játékToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(764, 30);
+            this.menu.Size = new System.Drawing.Size(764, 28);
             this.menu.TabIndex = 4;
             this.menu.Text = "menuStrip1";
             // 
@@ -253,7 +269,7 @@
             this.ranglistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.szintToolStripMenuItem});
             this.ranglistaToolStripMenuItem.Name = "ranglistaToolStripMenuItem";
-            this.ranglistaToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
+            this.ranglistaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.ranglistaToolStripMenuItem.Text = "Ranglista";
             // 
             // szintToolStripMenuItem
@@ -263,25 +279,31 @@
             this.közepesToolStripMenuItem,
             this.nehézToolStripMenuItem});
             this.szintToolStripMenuItem.Name = "szintToolStripMenuItem";
-            this.szintToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
+            this.szintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.szintToolStripMenuItem.Text = "Szint";
             // 
             // könnyűToolStripMenuItem
             // 
+            this.könnyűToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sorOszlopToolStripMenuItem});
             this.könnyűToolStripMenuItem.Name = "könnyűToolStripMenuItem";
-            this.könnyűToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.könnyűToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.könnyűToolStripMenuItem.Text = "Könnyű";
             // 
             // közepesToolStripMenuItem
             // 
+            this.közepesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sorOszlopToolStripMenuItem1});
             this.közepesToolStripMenuItem.Name = "közepesToolStripMenuItem";
-            this.közepesToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.közepesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.közepesToolStripMenuItem.Text = "Közepes";
             // 
             // nehézToolStripMenuItem
             // 
+            this.nehézToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sorOszlopToolStripMenuItem2});
             this.nehézToolStripMenuItem.Name = "nehézToolStripMenuItem";
-            this.nehézToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.nehézToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.nehézToolStripMenuItem.Text = "Nehéz";
             // 
             // játékToolStripMenuItem
@@ -289,13 +311,13 @@
             this.játékToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.újJátékToolStripMenuItem});
             this.játékToolStripMenuItem.Name = "játékToolStripMenuItem";
-            this.játékToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.játékToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.játékToolStripMenuItem.Text = "Játék";
             // 
             // újJátékToolStripMenuItem
             // 
             this.újJátékToolStripMenuItem.Name = "újJátékToolStripMenuItem";
-            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.újJátékToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.újJátékToolStripMenuItem.Text = "Új játék";
             this.újJátékToolStripMenuItem.Click += new System.EventHandler(this.újJátékToolStripMenuItem_Click);
             // 
@@ -313,7 +335,7 @@
             // 
             this.lbl_LevettParok.AutoSize = true;
             this.lbl_LevettParok.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_LevettParok.ForeColor = System.Drawing.Color.Navy;
+            this.lbl_LevettParok.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_LevettParok.Location = new System.Drawing.Point(633, 81);
             this.lbl_LevettParok.Name = "lbl_LevettParok";
             this.lbl_LevettParok.Size = new System.Drawing.Size(119, 28);
@@ -350,6 +372,123 @@
             this.lbl_harmadikLevett.Size = new System.Drawing.Size(0, 32);
             this.lbl_harmadikLevett.TabIndex = 2;
             // 
+            // sorOszlopToolStripMenuItem
+            // 
+            this.sorOszlopToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5});
+            this.sorOszlopToolStripMenuItem.Name = "sorOszlopToolStripMenuItem";
+            this.sorOszlopToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sorOszlopToolStripMenuItem.Text = "Sor/Oszlop";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem2.Text = "4";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem3.Text = "6";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem4.Text = "8";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem5.Text = "10";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // sorOszlopToolStripMenuItem1
+            // 
+            this.sorOszlopToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem6,
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9});
+            this.sorOszlopToolStripMenuItem1.Name = "sorOszlopToolStripMenuItem1";
+            this.sorOszlopToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.sorOszlopToolStripMenuItem1.Text = "Sor/Oszlop";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem6.Text = "4";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem7.Text = "6";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem8.Text = "8";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem9.Text = "10";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
+            // sorOszlopToolStripMenuItem2
+            // 
+            this.sorOszlopToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem10,
+            this.toolStripMenuItem11,
+            this.toolStripMenuItem12,
+            this.toolStripMenuItem13});
+            this.sorOszlopToolStripMenuItem2.Name = "sorOszlopToolStripMenuItem2";
+            this.sorOszlopToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.sorOszlopToolStripMenuItem2.Text = "Sor/Oszlop";
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem10.Text = "4";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem11.Text = "6";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem12.Text = "8";
+            this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem13.Text = "10";
+            this.toolStripMenuItem13.Click += new System.EventHandler(this.toolStripMenuItem13_Click);
+            // 
             // Ranglista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -380,6 +519,7 @@
             this.Controls.Add(this.lbl_top3);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
             this.Name = "Ranglista";
@@ -424,5 +564,20 @@
         private System.Windows.Forms.Label lbl_elsoLevett;
         private System.Windows.Forms.Label lbl_masodikLevett;
         private System.Windows.Forms.Label lbl_harmadikLevett;
+        private System.Windows.Forms.ToolStripMenuItem sorOszlopToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem sorOszlopToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem sorOszlopToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
     }
 }

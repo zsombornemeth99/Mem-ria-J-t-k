@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kezdokepernyo));
             this.lbl_udvozles = new System.Windows.Forms.Label();
             this.lbl_nev = new System.Windows.Forms.Label();
             this.txtBx_nev = new System.Windows.Forms.TextBox();
@@ -63,6 +64,7 @@
             this.txtBx_nev.Name = "txtBx_nev";
             this.txtBx_nev.Size = new System.Drawing.Size(273, 43);
             this.txtBx_nev.TabIndex = 1;
+            this.txtBx_nev.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBx_nev_KeyDown);
             // 
             // bttn_tovabb
             // 
@@ -85,6 +87,7 @@
             this.Controls.Add(this.lbl_udvozles);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Kezdokepernyo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -80,6 +80,7 @@
             // lbl_udv
             // 
             resources.ApplyResources(this.lbl_udv, "lbl_udv");
+            this.lbl_udv.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_udv.Name = "lbl_udv";
             // 
             // cmbBx_nehezseg
@@ -95,9 +96,10 @@
             // 
             // bttn_UjJatek
             // 
+            this.bttn_UjJatek.BackColor = System.Drawing.Color.LimeGreen;
             resources.ApplyResources(this.bttn_UjJatek, "bttn_UjJatek");
             this.bttn_UjJatek.Name = "bttn_UjJatek";
-            this.bttn_UjJatek.UseVisualStyleBackColor = true;
+            this.bttn_UjJatek.UseVisualStyleBackColor = false;
             this.bttn_UjJatek.Click += new System.EventHandler(this.bttn_UjJatek_Click);
             // 
             // nmrcUpDown_SorDb
@@ -128,15 +130,18 @@
             // lbl_nehezseg
             // 
             resources.ApplyResources(this.lbl_nehezseg, "lbl_nehezseg");
+            this.lbl_nehezseg.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_nehezseg.Name = "lbl_nehezseg";
             // 
             // lbl_SorOszlop
             // 
             resources.ApplyResources(this.lbl_SorOszlop, "lbl_SorOszlop");
+            this.lbl_SorOszlop.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_SorOszlop.Name = "lbl_SorOszlop";
             // 
             // pnl_Footer
             // 
+            this.pnl_Footer.BackColor = System.Drawing.Color.DarkGreen;
             this.pnl_Footer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_Footer.Controls.Add(this.lbl_probalkozasok);
             this.pnl_Footer.Controls.Add(this.lbl_ido);
@@ -147,16 +152,19 @@
             // lbl_probalkozasok
             // 
             resources.ApplyResources(this.lbl_probalkozasok, "lbl_probalkozasok");
+            this.lbl_probalkozasok.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_probalkozasok.Name = "lbl_probalkozasok";
             // 
             // lbl_ido
             // 
             resources.ApplyResources(this.lbl_ido, "lbl_ido");
+            this.lbl_ido.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_ido.Name = "lbl_ido";
             // 
             // lbl_LevettParok
             // 
             resources.ApplyResources(this.lbl_LevettParok, "lbl_LevettParok");
+            this.lbl_LevettParok.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_LevettParok.Name = "lbl_LevettParok";
             // 
             // tmr_Timer
@@ -172,10 +180,10 @@
             // 
             // menu
             // 
+            resources.ApplyResources(this.menu, "menu");
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ranglistaToolStripMenuItem});
-            resources.ApplyResources(this.menu, "menu");
             this.menu.Name = "menu";
             // 
             // ranglistaToolStripMenuItem
@@ -319,6 +327,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGreen;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lbl_SorOszlop);
             this.panel1.Controls.Add(this.bttn_UjJatek);
@@ -333,6 +342,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_Footer);
             this.Controls.Add(this.fp_Panel);
