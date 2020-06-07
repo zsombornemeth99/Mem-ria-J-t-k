@@ -283,13 +283,13 @@
     <value>3, 19</value>
   </data>
   <data name="lbl_SorOszlop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>82, 17</value>
   </data>
   <data name="lbl_SorOszlop.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lbl_SorOszlop.Text" xml:space="preserve">
-    <value>Sor/Oszlop</value>
+    <value>Sor/Oszlop:</value>
   </data>
   <data name="&gt;&gt;lbl_SorOszlop.Name" xml:space="preserve">
     <value>lbl_SorOszlop</value>
@@ -453,12 +453,6 @@
   <data name="menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10.2pt</value>
   </data>
-  <data name="ranglistaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 26</value>
-  </data>
-  <data name="ranglistaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ranglista</value>
-  </data>
   <data name="menu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -483,116 +477,122 @@
   <data name="&gt;&gt;menu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="ranglistaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 27</value>
+  </data>
+  <data name="ranglistaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ranglista</value>
+  </data>
   <data name="ranglistaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 26</value>
+    <value>131, 28</value>
   </data>
   <data name="ranglistaToolStripMenuItem1.Text" xml:space="preserve">
     <value>Szint</value>
   </data>
   <data name="szintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 26</value>
+    <value>157, 28</value>
   </data>
   <data name="szintToolStripMenuItem.Text" xml:space="preserve">
     <value>Könnyű</value>
   </data>
   <data name="sorOszlopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
+    <value>178, 28</value>
   </data>
   <data name="sorOszlopToolStripMenuItem.Text" xml:space="preserve">
     <value>Sor/Oszlop</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem3.Text" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem4.Text" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem5.Text" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="közepesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 26</value>
+    <value>157, 28</value>
   </data>
   <data name="közepesToolStripMenuItem.Text" xml:space="preserve">
     <value>Közepes</value>
   </data>
   <data name="sorOszlopToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
+    <value>178, 28</value>
   </data>
   <data name="sorOszlopToolStripMenuItem1.Text" xml:space="preserve">
     <value>Sor/Oszlop</value>
   </data>
   <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem6.Text" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem7.Text" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem8.Text" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="toolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem9.Text" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 26</value>
+    <value>157, 28</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>Nehéz</value>
   </data>
   <data name="toolStripMenuItem10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
+    <value>178, 28</value>
   </data>
   <data name="toolStripMenuItem10.Text" xml:space="preserve">
     <value>Sor/Oszlop</value>
   </data>
   <data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem11.Text" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="toolStripMenuItem12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem12.Text" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="toolStripMenuItem13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem13.Text" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="toolStripMenuItem14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 26</value>
+    <value>112, 28</value>
   </data>
   <data name="toolStripMenuItem14.Text" xml:space="preserve">
     <value>10</value>

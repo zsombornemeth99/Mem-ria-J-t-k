@@ -116,13 +116,13 @@
             0,
             0});
             this.nmrcUpDown_SorDb.Minimum = new decimal(new int[] {
-            2,
+            4,
             0,
             0,
             0});
             this.nmrcUpDown_SorDb.Name = "nmrcUpDown_SorDb";
             this.nmrcUpDown_SorDb.Value = new decimal(new int[] {
-            2,
+            4,
             0,
             0,
             0});
